@@ -3,16 +3,16 @@ public class Calculator {
     public Calculator(){
         answer = 0;
     }
-    public void plus(int x){
+    public void plus(Double x){
         this.answer+=x;
     }
-    public void minos(int x){
+    public void minos(Double x){
         this.answer-=x;
     }
-    public void times(int x){
+    public void times(Double x){
         this.answer*=x;
     }
-    public void divided(int x){
+    public void divided(Double x){
         this.answer/=x;
     }
     public double getAnswer(){

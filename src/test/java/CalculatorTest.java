@@ -7,25 +7,25 @@ class CalculatorTest {
     @Test
     public void testAdd_N001(){
         Calculator calc = new Calculator();
-        calc.plus(1);
+        calc.plus(1.0);
         assertEquals(calc.getAnswer(), 1);
     }
     @Test
     public void testMinos_N001(){
         Calculator calc = new Calculator();
-        calc.minos(1);
+        calc.minos(1.0);
         assertEquals(calc.getAnswer(), -1);
     }
     @Test
     public void testTimes_N001(){
         Calculator calc = new Calculator();
-        calc.times(1);
+        calc.times(1.0);
         assertEquals(calc.getAnswer(), 0);
     }
     @Test
     public void testDivided_N001(){
         Calculator calc = new Calculator();
-        calc.divided(1);
+        calc.divided(1.0);
         assertEquals(calc.getAnswer(), 0);
     }
 
