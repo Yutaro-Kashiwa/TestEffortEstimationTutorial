@@ -58,5 +58,11 @@ class CalculatorTest {
         calc.divided(0.0);
         assertNull(calc.getAnswer());
     }
-
+    @Test
+    public void testPower_N001(){
+        Calculator calc = new Calculator();
+        calc.plus(2.0);
+        calc.power();
+        assertEquals(calc.getAnswer(), Double.valueOf(4));
+    }
 }
