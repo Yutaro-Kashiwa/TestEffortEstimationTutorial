@@ -1,5 +1,5 @@
 public class Calculator {
-    int answer;
+    double answer;
     public Calculator(){
         answer = 0;
     }
@@ -15,7 +15,7 @@ public class Calculator {
     public void divided(int x){
         this.answer/=x;
     }
-    public int getAnswer(){
+    public double getAnswer(){
         return answer;
     }
 }
