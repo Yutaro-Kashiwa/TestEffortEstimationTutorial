@@ -1,4 +1,5 @@
 import static java.lang.StrictMath.abs;
+import static java.lang.StrictMath.pow;
 public class Calculator {
     Double answer;
     public Calculator(){
@@ -25,9 +26,9 @@ public class Calculator {
         }
         this.answer/=x;
     }
-    public void power(){
+    public void power(int x){
         if (answer==null) return;//ignore
-        answer *= answer;
+        answer = pow(answer, x);
     }
 
     public Double getAnswer(){
