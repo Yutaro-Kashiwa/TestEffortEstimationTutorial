@@ -1,25 +1,31 @@
+import static java.lang.StrictMath.abs;
 public class Calculator {
-    double answer;
+    Double answer;
     public Calculator(){
-        answer = 0;
+        answer = 0.0;
     }
     public void plus(Double x){
-        if (x==null) return;//ignore
+        if (x==null|answer==null) return;//ignore
         this.answer+=x;
     }
     public void minus(Double x){
-        if (x==null) return;//ignore
+        if (x==null|answer==null) return;//ignore
         this.answer-=x;
     }
     public void times(Double x){
-        if (x==null) return;//ignore
+        if (x==null|answer==null) return;//ignore
         this.answer*=x;
     }
     public void divided(Double x){
-        if (x==null) return;//ignore
+        if (x==null|answer==null) return;//ignore
+        if (abs(x)<=0.0){
+            System.err.println("the number was divided by 0");
+            answer = null;
+            return;
+        }
         this.answer/=x;
     }
-    public double getAnswer(){
+    public Double getAnswer(){
         return answer;
     }
 }
