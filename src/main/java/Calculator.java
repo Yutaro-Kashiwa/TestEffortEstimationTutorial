@@ -4,15 +4,19 @@ public class Calculator {
         answer = 0;
     }
     public void plus(Double x){
+        if (x==null) return;//ignore
         this.answer+=x;
     }
     public void minos(Double x){
+        if (x==null) return;//ignore
         this.answer-=x;
     }
     public void times(Double x){
+        if (x==null) return;//ignore
         this.answer*=x;
     }
     public void divided(Double x){
+        if (x==null) return;//ignore
         this.answer/=x;
     }
     public double getAnswer(){
