@@ -7,7 +7,7 @@ public class Calculator {
         if (x==null) return;//ignore
         this.answer+=x;
     }
-    public void minos(Double x){
+    public void minus(Double x){
         if (x==null) return;//ignore
         this.answer-=x;
     }
