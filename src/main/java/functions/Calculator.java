@@ -1,3 +1,5 @@
+package functions;
+
 import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.pow;
 public class Calculator {
