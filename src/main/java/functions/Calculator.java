@@ -4,6 +4,7 @@ import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.pow;
 public class Calculator {
     Double answer;
+    private double hiddenVar;
     public Calculator(){
         answer = 0.0;
     }
