@@ -28,10 +28,7 @@ public class Calculator {
         }
         this.answer/=x;
     }
-    public void power(int x) {
-        if (answer==null) return;//ignore
-        answer = pow(answer, x);
-    }
+
 
     public Double getAnswer()
     {
