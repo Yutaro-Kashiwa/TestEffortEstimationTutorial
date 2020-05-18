@@ -7,4 +7,9 @@ public class Calculator2 extends Calculator {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
     }
+    public Double getAnswer()
+    {
+        //This over ride is no use
+        return answer;
+    }
 }
