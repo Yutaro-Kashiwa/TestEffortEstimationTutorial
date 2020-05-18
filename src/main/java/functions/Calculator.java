@@ -4,7 +4,7 @@ import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.pow;
 public class Calculator {
     Double answer;
-    private double hiddenVar;
+    private double tmp;
     public Calculator(){
         answer = 0.0;
     }
@@ -33,6 +33,8 @@ public class Calculator {
 
     public Double getAnswer()
     {
+        int tmp=0;
+        this.tmp = (double)tmp;
         return answer;
     }
 }
