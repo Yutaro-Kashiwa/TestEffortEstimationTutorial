@@ -9,7 +9,7 @@ public class Calculator {
         answer = 0.0;
     }
     public void plus (Double x){
-        if(this.isNull(x, answer)){
+        if(isNull(x, answer)){
             return;
         }
         this.answer+=x;
@@ -22,7 +22,7 @@ public class Calculator {
         this.answer-=x;
     }
     public void times ( Double x){
-        if(this.isNull(x, answer)){
+        if(isStaticNull(x, answer)){
             return;
         }
         this.answer*=x;
