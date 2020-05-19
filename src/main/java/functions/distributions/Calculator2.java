@@ -5,7 +5,7 @@ import functions.Calculator;
 import static java.lang.StrictMath.pow;
 
 public class Calculator2 extends Calculator {
-    public void power(Double x) {
+    public void power(double x) {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
     }

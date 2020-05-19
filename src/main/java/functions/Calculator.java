@@ -15,8 +15,6 @@ public class Calculator {
         this.answer+=x;
     }
 
-
-
     public void minus( Double x){
         if(this.isNull(x, answer)){
             return;
