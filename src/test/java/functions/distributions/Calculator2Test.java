@@ -1,6 +1,7 @@
-package functions;
+package functions.distributions;
 
-import org.junit.jupiter.api.Test;
+import functions.Calculator;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -18,5 +19,8 @@ public class Calculator2Test {
         calc.plus(2.0);
         calc.power(0.0);
         assertEquals(calc.getAnswer(), Double.valueOf(1));
+        Calculator.aho();
+
     }
+
 }

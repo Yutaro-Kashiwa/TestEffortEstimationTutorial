@@ -1,4 +1,6 @@
-package functions;
+package functions.distributions;
+
+import functions.Calculator;
 
 import static java.lang.StrictMath.pow;
 
