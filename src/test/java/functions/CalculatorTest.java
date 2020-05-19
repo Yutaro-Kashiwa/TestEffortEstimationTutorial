@@ -1,6 +1,5 @@
 package functions;
 
-import functions.Calculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -60,6 +59,8 @@ class CalculatorTest {
         Calculator calc = new Calculator();
         calc.divided(0.0);
         assertNull(calc.getAnswer());
+        Calculator.aho();
+
     }
 
 }
