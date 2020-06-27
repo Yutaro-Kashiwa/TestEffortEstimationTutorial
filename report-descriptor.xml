@@ -1,0 +1,11 @@
+<project name="Clover Report" default="current">
+    <clover-setup initString="${cloverdb}" flushpolicy="interval" flushinterval="1000"/>
+    <target name="historical"/>
+    <target name="current">
+        <clover-report>
+            <current showUniqueCoverage="true" outfile="/Users/yutarokashiwa/Desktop/a.html">  <!-- Show per-test coverage in report -->
+                <format type="html"/>
+            </current>
+        </clover-report>
+    </target>
+</project>

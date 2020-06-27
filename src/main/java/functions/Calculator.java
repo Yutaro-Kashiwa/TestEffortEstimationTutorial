@@ -1,13 +1,15 @@
 package functions;
 
+import functions.special.B;
+
 import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.pow;
 public class Calculator {
     protected Double answer;
-    private double tmp;
     public Calculator(){
         answer = 0.0;
     }
+
     public void plus (Double x){
         if(isNull(x, answer)){
             return;
@@ -21,6 +23,7 @@ public class Calculator {
         }
         this.answer-=x;
     }
+
     public void times ( Double x){
         if(isStaticNull(x, answer)){
             return;
@@ -38,12 +41,24 @@ public class Calculator {
         }
         this.answer/=x;
     }
+    public void aaa1(int i){}
+    public void aaa2(double i){}
+    public void aaa3(float i){}
+    public void aaa5(short i){}
+    public void aaa6(long i){}
+    public void aaa4(boolean i){}
+    public void aaa7(byte i){}
+    public void aaa8(char i){}
+    public void aaa9(byte[] i){}
+    public void aaa10(Integer[] i){}
+    public void aaa11(Integer... i){}
+    public void aaa12(Object i){}
+
+
 
 
     public Double getAnswer()
     {
-        int tmp=0;
-        this.tmp = (double)tmp;
         return answer;
     }
     public static void aho(){
@@ -55,10 +70,29 @@ public class Calculator {
         }
         return false;
     }
-    private static boolean isStaticNull(Double x, Double answer) {
+    public static boolean isStaticNull(Double x, Double answer) {
         if (x==null|answer==null){
             return true;
         }
         return false;
     }
+    private void aaa(Double x,
+                     Double answer,
+                     Double answer1,
+                     Double answe4) {
+        System.out.println(x+""+answer+""+answer1+""+answe4);
+    }
+    public static void main(String[] args){
+        Calculator calc = new Calculator();
+        calc.plus(1.0);
+        System.out.println(calc.getAnswer());
+        String a = "/Users/yutarokashiwa/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar,org/opentest4j/AssertionFailedError,org/opentest4j/AssertionFailedError,Normal,5c926c86eeaa81c12cd59061b6a0d03afd5a2f21";
+        if(a.contains("/.m2/")){
+            System.out.println("YES");
+        }
+    }
+    public static class A {
+        public static B b;
+    }
+
 }
