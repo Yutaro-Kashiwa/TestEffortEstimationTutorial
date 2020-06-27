@@ -93,6 +93,12 @@ public class Calculator {
     }
     public static class A {
         public static B b;
+
+    }
+    public class SubClass{
+        public void SayHello(){
+            System.out.println("Hello World");
+        }
     }
 
 }
