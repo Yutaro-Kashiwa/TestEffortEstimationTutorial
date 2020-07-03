@@ -2,6 +2,7 @@ package functions.distributions;
 import functions.*;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class Calculator2Test {
     @Test
     public void testPower_N001(){
@@ -26,6 +27,7 @@ public class Calculator2Test {
     public void all(){
         Calculator c = new Calculator();
         c.aaa1(1);
+        c.aaa1_1(1, 1, 1.0);
         c.aaa2(1);
         c.aaa3(1);
         c.aaa4(false);
@@ -36,7 +38,9 @@ public class Calculator2Test {
         c.aaa9("a".getBytes());
         c.aaa10(new Integer[2]);
         c.aaa11(new Integer[2]);
-        c.aaa12(new Integer[2]);
+        c.aaa12(null);
+
+
     }
 
 }

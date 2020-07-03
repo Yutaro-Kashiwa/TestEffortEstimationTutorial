@@ -4,13 +4,16 @@ import functions.special.B;
 
 import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.pow;
-public class Calculator {
+public class Calculator<T> {
     protected Double answer;
+    protected T tmp;
     public Calculator(){
         answer = 0.0;
+        tmp = null;
     }
 
     public void plus (Double x){
+        System.out.println(tmp);
         if(isNull(x, answer)){
             return;
         }
@@ -42,17 +45,20 @@ public class Calculator {
         this.answer/=x;
     }
     public void aaa1(int i){}
+    public void aaa1_1(int i, double j, Double d){}
     public void aaa2(double i){}
     public void aaa3(float i){}
+    public void aaa4(boolean i){}
     public void aaa5(short i){}
     public void aaa6(long i){}
-    public void aaa4(boolean i){}
     public void aaa7(byte i){}
     public void aaa8(char i){}
     public void aaa9(byte[] i){}
     public void aaa10(Integer[] i){}
     public void aaa11(Integer... i){}
-    public void aaa12(Object i){}
+    public void aaa12(Double[][] i){
+        SubClass b = new SubClass();
+    }
 
 
 
@@ -96,6 +102,13 @@ public class Calculator {
 
     }
     public class SubClass{
+        public SubClass(){
+            ABC a = new ABC();
+            SayHello();
+        }
+        public class ABC{
+
+        }
         public void SayHello(){
             System.out.println("Hello World");
         }
