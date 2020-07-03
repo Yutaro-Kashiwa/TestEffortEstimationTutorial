@@ -11,7 +11,9 @@ public class Calculator<T> {
         answer = 0.0;
         tmp = null;
     }
-
+    public T tmp(T t){
+        return t;
+    }
     public void plus (Double x){
         System.out.println(tmp);
         if(isNull(x, answer)){
