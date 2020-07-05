@@ -3,7 +3,6 @@ package functions;
 import functions.special.B;
 
 import static java.lang.StrictMath.abs;
-import static java.lang.StrictMath.pow;
 public class Calculator<T> {
     protected Double answer;
     protected T tmp;
@@ -14,7 +13,7 @@ public class Calculator<T> {
     public T tmp(T t){
         return t;
     }
-    public void plus (Double x){
+    public  <R> void plus (Double x){
         System.out.println(tmp);
         if(isNull(x, answer)){
             return;

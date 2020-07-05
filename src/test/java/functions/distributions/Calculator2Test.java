@@ -16,6 +16,7 @@ public class Calculator2Test {
         Calculator2 calc = new Calculator2();
         calc.plus(2.0);
         calc.power(0.0);
+        aaa
         assertEquals(calc.getAnswer(), Double.valueOf(1));
         Calculator.aho();
     }
