@@ -4,6 +4,10 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Calculator2Test {
+    String a;
+    Calculator2Test(){
+        super();
+    }
     @Test
     public void testPower_N001(){
         Calculator2 calc = new Calculator2();

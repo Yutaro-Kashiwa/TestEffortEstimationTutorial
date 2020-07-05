@@ -28,7 +28,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <scope>test</scope>
             <groupId>org.openclover</groupId>
             <artifactId>clover</artifactId>
             <version>4.4.1</version>
@@ -43,7 +42,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <argLine>-javaagent:selogger-0.2.1.jar=output=selogger,format=nearomni,weave=EXEC,e=org/junit,e=com/intellij</argLine>
+                    <argLine>-javaagent:selogger-0.2.1.jar=output=selogger,format=nearomni,e=org/junit,e=com/intellij,e=jdk/nashorn,e=jdk/</argLine>
                 </configuration>
             </plugin>
 
