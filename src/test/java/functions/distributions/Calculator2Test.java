@@ -9,21 +9,21 @@ public class Calculator2Test {
         super();
     }
     @BeforeAll
-    static void beforeAll(){
+    public static void beforeAll(){
         System.out.println("beforeAll");
     }
     @BeforeAll
-    static void beforeEach(){
+    public static void  beforeEach(){
         System.out.println("beforeEach");
 
     }
     @AfterAll
-    static void afterAll(){
+    public static void afterAll(){
         System.out.println("afterAll");
 
     }
     @AfterEach
-    public void afterEach(){
+    public static void afterEach(){
         System.out.println("afterEach");
 
     }
