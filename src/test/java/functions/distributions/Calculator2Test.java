@@ -9,16 +9,16 @@ public class Calculator2Test {
         super();
     }
     @BeforeAll
-    public void beforeAll(){
+    static void beforeAll(){
         System.out.println("beforeAll");
     }
     @BeforeAll
-    public void beforeEach(){
+    static void beforeEach(){
         System.out.println("beforeEach");
 
     }
     @AfterAll
-    public void afterAll(){
+    static void afterAll(){
         System.out.println("afterAll");
 
     }
