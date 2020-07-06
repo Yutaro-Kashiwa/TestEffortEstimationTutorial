@@ -8,6 +8,26 @@ public class Calculator2Test {
     Calculator2Test(){
         super();
     }
+    @BeforeAll
+    public void beforeAll(){
+        System.out.println("beforeAll");
+    }
+    @BeforeAll
+    public void beforeEach(){
+        System.out.println("beforeEach");
+
+    }
+    @AfterAll
+    public void afterAll(){
+        System.out.println("afterAll");
+
+    }
+    @AfterEach
+    public void afterEach(){
+        System.out.println("afterEach");
+
+    }
+
     @Test
     public void testPower_N001(){
         Calculator2 calc = new Calculator2();
