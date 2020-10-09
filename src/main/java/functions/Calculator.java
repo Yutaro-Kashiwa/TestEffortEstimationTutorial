@@ -9,11 +9,15 @@ public class Calculator<T> {
     public Calculator(){
         answer = 0.0;
         tmp = null;
+        Car car = Car.TOYOTA;
+        car.values();
     }
     public T tmp(T t){
         return t;
     }
     public  <R> void plus (Double x){
+        int i = 0;
+        i += x.intValue();
         System.out.println(tmp);
         if(isNull(x, answer)){
             return;
