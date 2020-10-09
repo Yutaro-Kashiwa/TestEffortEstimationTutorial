@@ -16,8 +16,8 @@ public class Calculator<T> {
         return t;
     }
     public  <R> void plus (Double x){
-        double i = 0;
-        i += x.doubleValue();
+        int i = 0;
+        i += x.intValue();
         System.out.println(tmp);
         if(isNull(x, answer)){
             return;
