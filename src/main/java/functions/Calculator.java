@@ -94,7 +94,7 @@ public class Calculator<T> {
         System.out.println(x+""+answer+""+answer1+""+answe4);
     }
     public Integer Layer1(Integer i){
-        Integer j = B.Layer2(i);
+        Integer j = B.Layer2_RENAME(i);
         return j;
     }
     public static void main(String[] args){
