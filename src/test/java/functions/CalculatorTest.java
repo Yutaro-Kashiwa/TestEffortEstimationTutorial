@@ -62,5 +62,10 @@ class CalculatorTest {
 //        assertNull(calc.getAnswer());
 //        aho();
 //    }
-
+    @Test
+    public void testLayer_N001(){
+        Calculator calc = new Calculator();
+        Integer i = calc.Layer1(3);
+        assertEquals(i, Integer.valueOf(4));
+    }
 }

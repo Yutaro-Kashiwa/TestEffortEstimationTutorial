@@ -93,6 +93,10 @@ public class Calculator<T> {
                      Double answe4) {
         System.out.println(x+""+answer+""+answer1+""+answe4);
     }
+    public Integer Layer1(Integer i){
+        Integer j = B.Layer2(i);
+        return j;
+    }
     public static void main(String[] args){
         Calculator calc = new Calculator();
         calc.plus(1.0);
