@@ -1,0 +1,75 @@
+package functions.distributions;
+
+import functions.Calculator;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Calculator3Test {
+    String a;
+    Calculator3Test(){
+        super();
+    }
+    @BeforeAll
+    public static void beforeAll(){
+        System.out.println("beforeAll");
+    }
+    @BeforeAll
+    public static void  beforeEach(){
+        System.out.println("beforeEach");
+
+    }
+    @AfterAll
+    public static void afterAll(){
+        System.out.println("afterAll");
+
+    }
+    @AfterEach
+    public static void afterEach(){
+        System.out.println("afterEach");
+
+    }
+
+    @Test
+    public void testPower_N001(){
+        Calculator3 calc = new Calculator3();
+        calc.plus(2.0);
+        calc.power(2.0);
+        assertEquals(calc.getAnswer(), Double.valueOf(4));
+    }
+    @Test
+    public void testPower_N002(){
+        Calculator3 calc = new Calculator3();
+        calc.plus(2.0);
+        calc.power(0.0);
+        assertEquals(calc.getAnswer(), Double.valueOf(1));
+        Calculator.aho();
+    }
+    @Test
+    public void special_N001(){
+        Calculator.A.b.echo();
+    }
+    @Test
+    public void all(){
+        Calculator c = new Calculator();
+        c.aaa1(1);
+        c.aaa1_1(1, 1, 1.0);
+        c.aaa2(1);
+        c.aaa3(1);
+        c.aaa4(false);
+        c.aaa5((short) 1);
+        c.aaa6(1);
+        c.aaa7("a".getBytes()[0]);
+        c.aaa8('1');
+        c.aaa9("a".getBytes());
+        c.aaa10(new Integer[2]);
+        c.aaa11(new Integer[2]);
+        c.aaa12(null);
+
+
+    }
+
+}
