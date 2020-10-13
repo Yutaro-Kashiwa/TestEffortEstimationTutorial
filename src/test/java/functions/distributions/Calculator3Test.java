@@ -33,21 +33,7 @@ public class Calculator3Test {
 
     }
 
-    @Test
-    public void testPower_N001(){
-        Calculator3 calc = new Calculator3();
-        calc.plus(2.0);
-        calc.power(2.0);
-        assertEquals(calc.getAnswer(), Double.valueOf(4));
-    }
-    @Test
-    public void testPower_N002(){
-        Calculator3 calc = new Calculator3();
-        calc.plus(2.0);
-        calc.power(0.0);
-        assertEquals(calc.getAnswer(), Double.valueOf(1));
-        Calculator.aho();
-    }
+
     @Test
     public void special_N001(){
         Calculator.A.b.echo();
