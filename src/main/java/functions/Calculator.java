@@ -3,6 +3,8 @@ package functions;
 import functions.special.B;
 
 import static java.lang.StrictMath.abs;
+
+import java.util.List;
 public class Calculator<T> {
     protected Double answer;
     protected T tmp;
@@ -95,6 +97,10 @@ public class Calculator<T> {
     }
     public Integer Layer1(Integer i){
         Integer j = B.Layer2_RENAME(i);
+        return j;
+    }
+    public Integer Layer1_2(List<Integer> i){
+        Integer j = B.Layer2_2(i);
         return j;
     }
     public static void main(String[] args){

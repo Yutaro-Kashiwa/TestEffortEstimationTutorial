@@ -3,6 +3,9 @@ package functions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.List;
 class CalculatorTest {
 
     @Test
@@ -68,4 +71,14 @@ class CalculatorTest {
         Integer i = calc.Layer1(3);
         assertEquals(i, Integer.valueOf(4));
     }
+    @Test
+    public void testLayer_N002(){
+        Calculator calc = new Calculator();
+        List<Integer> a = new ArrayList<Integer>();
+        a.add(1);
+        a.add(2);
+        Integer i = calc.Layer1_2(a);
+        assertEquals(i, Integer.valueOf(2));
+    }
+
 }
