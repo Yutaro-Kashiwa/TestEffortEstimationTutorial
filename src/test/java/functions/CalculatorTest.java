@@ -1,6 +1,5 @@
 package functions;
 
-import functions.distributions.Calculator3;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -63,6 +62,12 @@ class CalculatorTest {
 //        assertNull(calc.getAnswer());
 //        aho();
 //    }
+    @Test
+    public void testLayer_N001(){
+        Calculator calc = new Calculator();
+        Integer i = calc.Layer1(3);
+        assertEquals(i, Integer.valueOf(4));
+    }
     @Test
     public void testPower_N001(){
         Calculator calc = new Calculator();
