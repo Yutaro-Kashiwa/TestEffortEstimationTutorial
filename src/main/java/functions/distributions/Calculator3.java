@@ -1,10 +1,10 @@
 package functions.distributions;
 
-import functions.*;
+import functions.Calculator;
 
 import static java.lang.StrictMath.pow;
 
-public class Calculator2 extends Calculator {
+public class Calculator3 extends Calculator {
     public Double getAnswer()
     {
         //This over ride is no use

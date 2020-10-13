@@ -1,11 +1,16 @@
 package functions.distributions;
-import functions.*;
-import org.junit.jupiter.api.*;
+
+import functions.Calculator;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Calculator2Test {
+public class Calculator3Test {
     String a;
-    Calculator2Test(){
+    Calculator3Test(){
         super();
     }
     @BeforeAll
@@ -27,6 +32,7 @@ public class Calculator2Test {
         System.out.println("afterEach");
 
     }
+
 
     @Test
     public void special_N001(){

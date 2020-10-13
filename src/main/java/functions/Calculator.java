@@ -5,6 +5,8 @@ import functions.special.B;
 import static java.lang.StrictMath.abs;
 
 import java.util.List;
+import static java.lang.StrictMath.pow;
+
 public class Calculator<T> {
     protected Double answer;
     protected T tmp;
@@ -13,6 +15,10 @@ public class Calculator<T> {
         tmp = null;
         Car car = Car.TOYOTA;
         car.values();
+    }
+    public void power(Double x) {
+        if (answer==null) return;//ignore
+        answer = pow(answer, x);
     }
     public T tmp(T t){
         return t;
