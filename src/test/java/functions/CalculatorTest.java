@@ -7,13 +7,17 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 class CalculatorTest {
-
+    public static void common(){
+        int i = 0;
+        i += 1;
+    }
     @Test
     public void testAdd_N001(){
         Calculator calc = new Calculator();
         calc.plus(1.0);
         assertEquals(calc.getAnswer(), Double.valueOf(1));
         System.out.println();
+        common();
     }
 
     @Test
