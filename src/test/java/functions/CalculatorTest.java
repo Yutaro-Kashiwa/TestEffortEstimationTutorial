@@ -7,8 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 class CalculatorTest {
+    @Deprecated
     public static void common(){
-        int i = 0;
+        Integer i = 0;
         i += 1;
     }
     @Test
