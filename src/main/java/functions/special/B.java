@@ -11,7 +11,7 @@ public class B {
         return i;
     }
     public static Integer Layer2_2(List<Integer> a){
-        boolean notNull = a.size() > -1;
+        Boolean notNull = a.size() > -1;
         if(notNull){
             return a.size();
         }
