@@ -100,10 +100,10 @@ public class Calculator<T> {
                      Double answe4) {
         System.out.println(x+""+answer+""+answer1+""+answe4);
     }
-    public Integer Layer1(Integer i){
+    public Integer Layer1(Integer a){
         long ii = B.i;
         long iii = functions.special.B.i;
-        Integer j = B.Layer2_RENAME(i);
+        Integer j = B.Layer2_RENAME(a);
         return j;
     }
     public Integer Layer1_2(List<Integer> i){
