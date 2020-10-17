@@ -1,7 +1,6 @@
 package functions;
 
 import functions.special.B;
-
 import static java.lang.StrictMath.abs;
 
 import java.util.List;
@@ -102,6 +101,8 @@ public class Calculator<T> {
         System.out.println(x+""+answer+""+answer1+""+answe4);
     }
     public Integer Layer1(Integer i){
+        int ii = B.i;
+        int iii = functions.special.B.i;
         Integer j = B.Layer2_RENAME(i);
         return j;
     }
