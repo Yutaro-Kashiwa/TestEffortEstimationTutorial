@@ -3,6 +3,7 @@ package functions.special;
 import java.util.List;
 
 public class B {
+    @Deprecated
     public static long i = 1;
     public static void echo(){
         System.out.println("echo");
