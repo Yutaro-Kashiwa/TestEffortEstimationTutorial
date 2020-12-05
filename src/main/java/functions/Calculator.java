@@ -7,7 +7,7 @@ import static java.lang.StrictMath.abs;
 import java.util.List;
 import static java.lang.StrictMath.pow;
 
-public class Calculator<T> {
+public class Calculator<T> implements Pluser{
 
     protected Double answer;
     protected T tmp;
