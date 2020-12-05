@@ -29,6 +29,10 @@ public class Calculator<T> {
         int i = 0;
         i += x.intValue();
         System.out.println(tmp);
+        add(x);
+    }
+
+    private void add(Double x) {
         if(isNull(x, answer)){
             return;
         }
