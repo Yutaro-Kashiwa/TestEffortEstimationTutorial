@@ -28,11 +28,9 @@ public class Calculator<T> {
 
     public  <R> void plus (Double x){
         this.answer+=x;
-        show();
-    }
-    void show() {
         System.out.println(this.answer);
     }
+
 
 
     public void minus( Double x){
