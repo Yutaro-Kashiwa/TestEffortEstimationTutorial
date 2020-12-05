@@ -11,7 +11,6 @@ public class Calculator<T> {
 
     protected Double answer;
     protected T tmp;
-    double i;
     public Calculator(){
         answer = 0.0;
         tmp = null;
@@ -28,7 +27,6 @@ public class Calculator<T> {
     }
 
     public  <R> void plus (Double x){
-        this.i = x;
         this.answer+=x;
     }
 
