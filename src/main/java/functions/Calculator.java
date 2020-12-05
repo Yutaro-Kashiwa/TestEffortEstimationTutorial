@@ -31,11 +31,9 @@ public class Calculator<T> {
         getRating();
     }
     int getRating() {
-        return moreThanFiveLateDeliveries() ? 2 : 1;
+        return this.answer > 5 ? 2 : 1;
     }
-    boolean moreThanFiveLateDeliveries() {
-        return this.answer > 5;
-    }
+
 
     public void minus( Double x){
         if(this.isNull(x, answer)){
