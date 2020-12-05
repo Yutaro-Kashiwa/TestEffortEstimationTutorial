@@ -27,19 +27,10 @@ public class Calculator<T> {
         return t;
     }
 
-    @Deprecated
     public  <R> void plus (Double x){
-        int i = x.intValue();
-        System.out.println(tmp);
-        add(x);
-    }
-
-    private void add(Double x) {
-        if(isNull(x, answer)){
-            return;
-        }
         this.answer+=x;
     }
+
 
     public void minus( Double x){
         if(this.isNull(x, answer)){
