@@ -28,7 +28,7 @@ public class Calculator3Test {
 
     }
     @AfterEach
-    public static void afterEach(){
+    public void afterEach(){
         System.out.println("afterEach");
 
     }

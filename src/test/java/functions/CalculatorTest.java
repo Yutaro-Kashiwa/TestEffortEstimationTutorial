@@ -24,7 +24,7 @@ class CalculatorTest {
     @Test
     public void testAdd_N002(){
         Calculator calc = new Calculator();
-        calc.plus(null);
+        calc.plus(0.0);
         assertEquals(calc.getAnswer(), Double.valueOf(0));
     }
     @Test
