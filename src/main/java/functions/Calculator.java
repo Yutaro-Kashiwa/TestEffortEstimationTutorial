@@ -29,8 +29,14 @@ public class Calculator<T> {
 
     public  <R> void plus (Double x){
         this.answer+=x;
+        getRating();
     }
-
+    int getRating() {
+        return moreThanFiveLateDeliveries() ? 2 : 1;
+    }
+    boolean moreThanFiveLateDeliveries() {
+        return 1 > 5;
+    }
 
     public void minus( Double x){
         if(this.isNull(x, answer)){
