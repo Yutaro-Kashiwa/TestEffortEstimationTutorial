@@ -29,8 +29,7 @@ public class Calculator<T> {
 
     @Deprecated
     public  <R> void plus (Double x){
-        int i = 0;
-        i += x.intValue();
+        int i = x.intValue();
         System.out.println(tmp);
         add(x);
     }
