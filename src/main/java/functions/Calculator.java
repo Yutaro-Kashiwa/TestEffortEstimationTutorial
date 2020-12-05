@@ -32,10 +32,7 @@ public class Calculator<T> {
         getRating();
     }
     int getRating() {
-        return moreThanFiveLateDeliveries() ? 2 : 1;
-    }
-    boolean moreThanFiveLateDeliveries() {
-        return 1 > 5;
+        return 1 > 5 ? 2 : 1;
     }
 
     public void minus( Double x){
