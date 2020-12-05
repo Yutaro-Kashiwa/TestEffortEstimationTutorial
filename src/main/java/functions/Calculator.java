@@ -1,13 +1,15 @@
 package functions;
 
 import functions.special.B;
+import org.jetbrains.annotations.NotNull;
+
 import static java.lang.StrictMath.abs;
 
 import java.util.List;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
-    @Deprecated
+    @NotNull
     protected Double answer;
     protected T tmp;
     public Calculator(){
