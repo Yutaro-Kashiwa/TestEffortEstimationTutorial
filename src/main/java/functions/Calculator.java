@@ -1,16 +1,16 @@
 package functions;
 
 import functions.special.B;
-import functions.special.CalculatorBase;
 
 import static java.lang.StrictMath.abs;
 
 import java.util.List;
 import static java.lang.StrictMath.pow;
 
-public class Calculator<T> extends CalculatorBase {
+public class Calculator<T> {
 
-
+    protected Double answer;
+    protected T tmp;
     public Calculator(){
         answer = 0.0;
         tmp = null;
@@ -26,8 +26,9 @@ public class Calculator<T> extends CalculatorBase {
         return t;
     }
 
-
-
+    public  <R> void plus (Double x){
+        this.answer+=x;
+    }
 
 
     public void minus( Double x){
