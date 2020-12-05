@@ -28,10 +28,10 @@ public class Calculator<T> {
 
     public  <R> void plus (Double x){
         this.answer+=x;
-        getRating();
+        show();
     }
-    int getRating() {
-        return this.answer > 5 ? 2 : 1;
+    void show() {
+        System.out.println(this.answer);
     }
 
 
