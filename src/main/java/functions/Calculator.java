@@ -90,9 +90,6 @@ public class Calculator<T> {
         }
         return false;
     }
-    public static Integer aho(){
-        return 1;
-    }
     private void aaa(Double x,
                      Double answer,
                      Double answer1,

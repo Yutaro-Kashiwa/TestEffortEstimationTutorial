@@ -20,4 +20,7 @@ public class Calculator2 extends Calculator {
     {
         return Calculator3.tmpAttribute;
     }
+    public static Integer aho(){
+        return 1;
+    }
 }
