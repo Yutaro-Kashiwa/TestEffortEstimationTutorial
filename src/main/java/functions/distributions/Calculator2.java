@@ -1,6 +1,5 @@
 package functions.distributions;
 
-import functions.ExtraDistributions.CalculatorExtra;
 import functions.*;
 
 import static java.lang.StrictMath.pow;
@@ -20,7 +19,7 @@ public class Calculator2{
     }
     public Double getAttribute()
     {
-        return CalculatorExtra.tmpAttribute;
+        return Calculator3.tmpAttribute;
     }
     public static Integer aho(){
         return 1;

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import functions.special.B;
 import functions.distributions.Calculator2;
-import functions.ExtraDistributions.CalculatorExtra;
+import functions.distributions.Calculator3;
 class CalculatorTest {
     @Deprecated
     public static void common(){
@@ -36,7 +36,7 @@ class CalculatorTest {
    }
    @Test
    public void testCalcExtra_N001(){
-       CalculatorExtra calc3 = new CalculatorExtra();
+       Calculator3 calc3 = new Calculator3();
        Double tmpAtribute = calc3.getAttribute();
        assertEquals(tmpAtribute, Double.valueOf(0.0));
    }

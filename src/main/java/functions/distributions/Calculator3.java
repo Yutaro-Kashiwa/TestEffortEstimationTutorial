@@ -1,10 +1,10 @@
-package functions.ExtraDistributions;
+package functions.distributions;
 
 import functions.Calculator;
 
 import static java.lang.StrictMath.pow;
 
-public class CalculatorExtra extends Calculator {
+public class Calculator3 extends Calculator {
     public static Double tmpAttribute = 0.0;
     public Double getAnswer()
     {
