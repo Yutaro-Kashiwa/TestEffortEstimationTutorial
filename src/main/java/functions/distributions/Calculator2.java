@@ -9,7 +9,7 @@ public class Calculator2{
     public Double getAnswer()
     {
         //This over ride is no use
-        Calculator calc = new Calculator<>();
+        Calculator calc = Calculator.create();
         return calc.getAnswer();
     }
     public static boolean isStaticNull(Double x, Double answer) {

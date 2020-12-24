@@ -17,6 +17,9 @@ public class Calculator<T> {
         Car car = Car.TOYOTA;
         car.values();
     }
+    public static Calculator create(){
+        return new Calculator();
+    }
 
     public void power(Double x) {
         if (answer==null) return;//ignore
