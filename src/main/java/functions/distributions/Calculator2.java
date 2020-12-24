@@ -16,4 +16,8 @@ public class Calculator2 extends Calculator {
         }
         return false;
     }
+    public Double getAttribute()
+    {
+        return tmpAttribute;
+    }
 }

@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 import functions.special.B;
+import functions.distributions.Calculator2;
 class CalculatorTest {
     @Deprecated
     public static void common(){
@@ -21,18 +22,17 @@ class CalculatorTest {
         System.out.println();
         common();
     }
-
    @Test
    public void testaho_N002(){
        B b = new B();
        assertEquals(b.aho(), Integer.valueOf(1));
        }
-//    @Test
-//    public void testMinus_N001(){
-//        Calculator calc = new Calculator();
-//        calc.minus(1.0);
-//        assertEquals(calc.getAnswer(), Double.valueOf(-1));
-//    }
+   @Test
+   public void testCalc2_N001(){
+       Calculator2 calc2 = new Calculator2();
+       Double tmpAtribute = calc2.getAttribute();
+       assertEquals(tmpAtribute, Double.valueOf(0.0));
+   }
 //    @Test
 //    public void testMinus_N002(){
 //        Calculator calc = new Calculator();

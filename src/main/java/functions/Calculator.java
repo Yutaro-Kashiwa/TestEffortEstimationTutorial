@@ -8,7 +8,8 @@ import java.util.List;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
-
+    public Double tmpAttribute = 0.0;
+    
     protected Double answer;
     protected T tmp;
     public Calculator(){
