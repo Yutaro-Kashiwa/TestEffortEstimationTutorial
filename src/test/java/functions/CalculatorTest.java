@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import functions.special.B;
 import functions.distributions.Calculator2;
+import functions.distributions.Calculator3;
 class CalculatorTest {
     @Deprecated
     public static void common(){
@@ -33,12 +34,12 @@ class CalculatorTest {
        Double tmpAtribute = calc2.getAttribute();
        assertEquals(tmpAtribute, Double.valueOf(0.0));
    }
-//    @Test
-//    public void testMinus_N002(){
-//        Calculator calc = new Calculator();
-//        calc.minus(null);
-//        assertEquals(calc.getAnswer(), Double.valueOf(0));
-//    }
+   @Test
+   public void testCalc3_N001(){
+       Calculator3 calc3 = new Calculator3();
+       Double tmpAtribute = calc3.getAttribute();
+       assertEquals(tmpAtribute, Double.valueOf(0.0));
+   }
 //    @Test
 //    public void testTimes_N001(){
 //        Calculator calc = new Calculator();

@@ -5,6 +5,7 @@ import functions.Calculator;
 import static java.lang.StrictMath.pow;
 
 public class Calculator3 extends Calculator {
+    public static Double tmpAttribute = 0.0;
     public Double getAnswer()
     {
         //This over ride is no use
@@ -18,6 +19,6 @@ public class Calculator3 extends Calculator {
     }
     public Double getAttribute()
     {
-        return Calculator2.tmpAttribute;
+        return tmpAttribute;
     }
 }
