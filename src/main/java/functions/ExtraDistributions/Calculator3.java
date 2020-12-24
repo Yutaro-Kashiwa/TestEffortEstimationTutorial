@@ -1,4 +1,4 @@
-package functions.distributions;
+package functions.ExtraDistributions;
 
 import functions.Calculator;
 

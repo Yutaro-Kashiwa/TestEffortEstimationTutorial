@@ -1,5 +1,6 @@
 package functions.distributions;
 
+import functions.ExtraDistributions.Calculator3;
 import functions.*;
 
 import static java.lang.StrictMath.pow;

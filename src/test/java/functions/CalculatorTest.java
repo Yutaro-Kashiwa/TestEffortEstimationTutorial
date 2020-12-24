@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import functions.special.B;
 import functions.distributions.Calculator2;
-import functions.distributions.Calculator3;
+import functions.ExtraDistributions.Calculator3;
 class CalculatorTest {
     @Deprecated
     public static void common(){
