@@ -78,8 +78,8 @@ public class Calculator<T> {
     {
         return answer;
     }
-    public static void aho(){
-        System.out.println(1);
+    public static Integer aho(){
+        return 1;
     }
     private boolean isNull(Double x, Double answer) {
         if (x==null|answer==null){

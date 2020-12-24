@@ -22,11 +22,11 @@ class CalculatorTest {
     }
 
    @Test
-   public void testAdd_N002(){
+   public void testaho_N002(){
        Calculator calc = new Calculator();
-       calc.plus_renamed(0.0);
-       assertEquals(calc.getAnswer(), Double.valueOf(0));
-   }
+       calc.plus_renamed(1.0);
+       assertEquals(calc.aho(), Integer.valueOf(1));
+       }
 //    @Test
 //    public void testMinus_N001(){
 //        Calculator calc = new Calculator();
