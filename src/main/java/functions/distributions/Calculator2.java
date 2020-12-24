@@ -5,11 +5,12 @@ import functions.*;
 
 import static java.lang.StrictMath.pow;
 
-public class Calculator2 extends Calculator {
+public class Calculator2{
     public Double getAnswer()
     {
         //This over ride is no use
-        return super.getAnswer();
+        Calculator calc = new Calculator<>();
+        return calc.getAnswer();
     }
     public static boolean isStaticNull(Double x, Double answer) {
         if (x==null|answer==null){

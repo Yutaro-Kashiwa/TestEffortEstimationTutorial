@@ -31,8 +31,8 @@ class CalculatorTest {
    @Test
    public void testCalc2_N001(){
        Calculator2 calc2 = new Calculator2();
-       Double tmpAtribute = calc2.getAttribute();
-       assertEquals(tmpAtribute, Double.valueOf(0.0));
+       Double answer = calc2.getAnswer();
+       assertEquals(answer, Double.valueOf(0.0));
    }
    @Test
    public void testCalcExtra_N001(){
