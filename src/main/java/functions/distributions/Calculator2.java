@@ -5,7 +5,7 @@ import functions.*;
 import static java.lang.StrictMath.pow;
 
 public class Calculator2 extends Calculator {
-    public Double tmpAttribute = 0.0;
+    public static Double tmpAttribute = 0.0;
     public Double getAnswer()
     {
         //This over ride is no use
