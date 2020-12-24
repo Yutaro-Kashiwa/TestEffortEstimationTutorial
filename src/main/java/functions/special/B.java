@@ -12,6 +12,9 @@ public class B {
         i = i + 1;
         return i;
     }
+    public static Integer aho(){
+        return 1;
+    }
     public static Integer Layer2_2(List<Integer> a){
         Boolean notNull = a.size() > -1;
         if(notNull){

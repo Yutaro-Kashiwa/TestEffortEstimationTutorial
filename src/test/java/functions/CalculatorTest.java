@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import functions.special.B;
 class CalculatorTest {
     @Deprecated
     public static void common(){
@@ -23,9 +24,8 @@ class CalculatorTest {
 
    @Test
    public void testaho_N002(){
-       Calculator calc = new Calculator();
-       calc.plus_renamed(1.0);
-       assertEquals(calc.aho(), Integer.valueOf(1));
+       B b = new B();
+       assertEquals(b.aho(), Integer.valueOf(1));
        }
 //    @Test
 //    public void testMinus_N001(){
