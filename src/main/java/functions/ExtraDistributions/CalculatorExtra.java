@@ -4,7 +4,7 @@ import functions.Calculator;
 
 import static java.lang.StrictMath.pow;
 
-public class Calculator3 extends Calculator {
+public class CalculatorExtra extends Calculator {
     public static Double tmpAttribute = 0.0;
     public Double getAnswer()
     {
