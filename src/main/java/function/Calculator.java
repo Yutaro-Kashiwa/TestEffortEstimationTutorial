@@ -26,7 +26,8 @@ public class Calculator<T> {
     public void plus (Double x){
         int i = 0;
         i += x.intValue();
-        if (i > 0){
+        boolean a = i > 0;
+        if (a){
             return;
         }
         System.out.println(tmp);
