@@ -1,5 +1,7 @@
 package function;
 
+import java.util.LinkedList;
+
 import static java.lang.StrictMath.abs;
 
 import static java.lang.StrictMath.pow;
@@ -7,7 +9,7 @@ import static java.lang.StrictMath.pow;
 public class Calculator<T> {
     protected Double answer;
     protected T tmp;
-    private Queue tq;
+    public LinkedList<Integer> queue;
 
     public Calculator(){
         answer = 0.0;
@@ -30,7 +32,7 @@ public class Calculator<T> {
         i += x.intValue();
         System.out.println(tmp);
         add(x);
-        System.out.println(tq.queue);
+        System.out.println(queue);
     }
 
     private void add(Double x) {
