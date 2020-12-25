@@ -35,8 +35,10 @@ public class Calculator<T> {
 
 
     public void minus( Double x){
-        Minus minus = new Minus(answer);
-        this.answer =minus.minus(x);
+        if(this.isNull(x, answer)){
+            return;
+        }
+        this.answer-=x;
     }
 
     public void times ( Double x){
