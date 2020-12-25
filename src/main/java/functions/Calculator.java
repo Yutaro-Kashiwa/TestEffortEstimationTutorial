@@ -16,7 +16,7 @@ public class Calculator<T> {
         car.values();
     }
 
-    @Deprecated
+    @SuppressWarnings("")
     public void power(Double x) {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
