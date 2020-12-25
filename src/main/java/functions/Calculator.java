@@ -38,7 +38,9 @@ public class Calculator<T> {
         this.answer+=x;
         getRating();
     }
-
+    public static int getRating() {
+        return 1 > 5 ? 2 : 1;
+    }
 
 
     public void minus( Double x){
