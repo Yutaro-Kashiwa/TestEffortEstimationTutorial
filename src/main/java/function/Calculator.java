@@ -6,7 +6,7 @@ import static java.lang.StrictMath.abs;
 
 import static java.lang.StrictMath.pow;
 
-abstract public class Calculator<T> {
+public class Calculator<T> {
     protected Double answer;
     protected T tmp;
     public LinkedList<Integer> queue;
@@ -22,10 +22,21 @@ abstract public class Calculator<T> {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
     }
-    abstract public void plus (Double x);
 
-    abstract protected void add(Double x);
+    public void plus (Double x){
+        int i = 0;
+        i += x.intValue();
+        System.out.println(tmp);
+        add(x);
+        System.out.println(queue);
+    }
 
+    protected void add(Double x) {
+        if(isNull(x, answer)){
+            return;
+        }
+        this.answer+=x;
+    }
 
     public void minus( Double x){
         if(this.isNull(x, answer)){
