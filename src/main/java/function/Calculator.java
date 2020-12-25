@@ -23,7 +23,7 @@ public class Calculator<T> {
         answer = pow(answer, x);
     }
 
-    public  <R> void plus (Double x){
+    public void plus (Double x){
         int i = 0;
         i += x.intValue();
         System.out.println(tmp);
