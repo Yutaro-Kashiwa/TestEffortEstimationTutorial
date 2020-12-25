@@ -9,7 +9,7 @@ import static java.lang.StrictMath.pow;
 public class Calculator<T> {
     protected Double answer;
     protected T tmp;
-    private LinkedList<Integer> queue;
+    private Queue tq;
 
     public Calculator(){
         answer = 0.0;
@@ -32,7 +32,7 @@ public class Calculator<T> {
         i += x.intValue();
         System.out.println(tmp);
         add(x);
-        System.out.println(queue);
+        System.out.println(tq.queue);
     }
 
     private void add(Double x) {
