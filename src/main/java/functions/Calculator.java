@@ -19,9 +19,7 @@ public class Calculator<T> {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
     }
-    public static int getRating() {
-        return 1 > 5 ? 2 : 1;
-    }
+
     public T tmp(T t){
         return t;
     }
