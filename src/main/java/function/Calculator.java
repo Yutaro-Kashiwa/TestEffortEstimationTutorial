@@ -26,8 +26,9 @@ public class Calculator<T> {
     public void plus (Double x){
         int i = 0;
         i += x.intValue();
-        boolean a = i > 0;
-        if (a){
+        double j = x*x;
+        double k = x*x*x;
+        if (i > 0&&j>2&&k<5){
             return;
         }
         System.out.println(tmp);
