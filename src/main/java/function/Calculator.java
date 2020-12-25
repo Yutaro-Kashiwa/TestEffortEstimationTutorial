@@ -22,14 +22,7 @@ abstract public class Calculator<T> {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
     }
-
-    public void plus (Double x){
-        int i = 0;
-        i += x.intValue();
-        System.out.println(tmp);
-        add(x);
-        System.out.println(queue);
-    }
+    abstract public void plus (Double x);
 
     abstract protected void add(Double x);
 
