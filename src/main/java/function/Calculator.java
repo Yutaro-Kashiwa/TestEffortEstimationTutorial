@@ -20,8 +20,7 @@ public class Calculator<T> {
         answer = pow(answer, x);
     }
     public double temp1(double i){
-        i = i + i;
-        return i;
+        return i + i;
     }
     public void plus (Double p){
         double val=this.temp1(p);
