@@ -19,9 +19,13 @@ public class Calculator<T> {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
     }
-
+    public double temp1(double i){
+        i = i + i;
+        return i;
+    }
     public void plus (Double p){
-        int val=0;
+        double val=this.temp1(p);
+
         this.val += p.intValue();
         System.out.println(tmpVal);
         add(p);
