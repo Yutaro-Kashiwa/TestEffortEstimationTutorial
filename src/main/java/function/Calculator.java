@@ -28,7 +28,10 @@ public class Calculator<T> {
         i += x.intValue();
         double j = x*x;
         double k = x*x*x;
-        if (i > 0&&j>2&&k<5){
+        boolean a = i > 0;
+        boolean b = j>2;
+        boolean c = k<5;
+        if (a&&b&&c){
             return;
         }
         System.out.println(tmp);
