@@ -1,6 +1,5 @@
 package functions;
 
-import static functions.Util.getRating;
 import static java.lang.StrictMath.abs;
 
 import java.util.List;
@@ -19,6 +18,9 @@ public class Calculator<T> {
     public void power(Double x) {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
+    }
+    public static int getRating() {
+        return 1 > 5 ? 2 : 1;
     }
     public T tmp(T t){
         return t;
