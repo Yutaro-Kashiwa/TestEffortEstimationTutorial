@@ -6,6 +6,7 @@ import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
     protected Double answer = 0.0;;
+    State s = new State();
 
     public Calculator(){
     }
@@ -16,11 +17,10 @@ public class Calculator<T> {
     }
 
     public void plus (Double p){
-        State s = new State();
-        add(p, s);
+        add(p);
     }
 
-    protected void add(Double x, State s) {
+    protected void add(Double x) {
         if(isNull(x, answer)){
             return;
         }
