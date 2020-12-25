@@ -32,7 +32,8 @@ public class Calculator<T> {
     }
 
     protected void add(Double x) {
-        if(isNull(x, answer)){
+        boolean a = isNull(x, answer);
+        if(a){
             return;
         }
         this.answer+=x;
