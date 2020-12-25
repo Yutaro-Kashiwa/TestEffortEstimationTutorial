@@ -23,16 +23,8 @@ public class Calculator<T> {
     }
 
     public void plus (Double x){
-        int i = 0;
-        i += x.intValue();
-        double j = x*x;
-        double k = x*x*x;
-        boolean a = i > 0;
-        boolean b = j>2;
-        boolean c = k<5;
-        if (a&&b&&c){
-            return;
-        }
+        int val = 0;
+        val += x.intValue();
         System.out.println(tmp);
         add(x);
         System.out.println(queue);
