@@ -24,8 +24,7 @@ public class Calculator<T> {
         return t;
     }
 
-    
-    public  <R> void plus (@SuppressWarnings("")Double x){
+    public  <R> void plus (@Deprecated Double x){
         int i = 0;
         i += x.intValue();
         System.out.println(tmp);
