@@ -9,7 +9,10 @@ import static java.lang.StrictMath.pow;
 public class Calculator<T> {
     protected Double answer;
     protected T tmp;
-    public LinkedList<Integer> queue;
+    public Queue queue;
+    class Queue{
+        public LinkedList<Integer> queue;
+    }
 
     public Calculator(){
         answer = 0.0;
