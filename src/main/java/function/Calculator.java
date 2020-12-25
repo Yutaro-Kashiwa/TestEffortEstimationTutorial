@@ -23,8 +23,7 @@ public class Calculator<T> {
         return i+i;
     }
     public double temp1(double i){
-        i = temp2(i);
-        return i;
+        return temp2(i);
     }
     public void plus (Double p){
         double val=this.temp1(p);
