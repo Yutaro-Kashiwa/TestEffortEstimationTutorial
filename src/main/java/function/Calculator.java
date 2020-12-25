@@ -8,11 +8,11 @@ import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
     protected Double answer = 0.0;;
-    protected T tmp;
+    protected T tmpVal;
     public LinkedList<Integer> queue;
 
     public Calculator(){
-        tmp = null;
+        tmpVal = null;
         Car car = Car.TOYOTA;
         car.values();
     }
@@ -22,11 +22,11 @@ public class Calculator<T> {
         answer = pow(answer, x);
     }
 
-    public void plus (Double x){
+    public void plus (Double p){
         int val = 0;
-        val += x.intValue();
-        System.out.println(tmp);
-        add(x);
+        val += p.intValue();
+        System.out.println(tmpVal);
+        add(p);
         System.out.println(queue);
     }
 
