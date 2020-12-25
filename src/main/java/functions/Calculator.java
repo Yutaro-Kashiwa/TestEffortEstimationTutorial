@@ -7,7 +7,7 @@ import java.util.List;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
-    @Deprecated
+    @SuppressWarnings("")
     protected Double answer;
     protected T tmp;
     public Calculator(){
