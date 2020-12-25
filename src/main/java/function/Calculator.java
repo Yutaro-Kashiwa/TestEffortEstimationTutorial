@@ -9,10 +9,6 @@ import static java.lang.StrictMath.pow;
 public class Calculator<T> {
     protected Double answer;
     protected T tmp;
-    public Queue queue;
-    class Queue{
-        public LinkedList<Integer> queue;
-    }
 
     public Calculator(){
         answer = 0.0;
@@ -30,15 +26,9 @@ public class Calculator<T> {
         return t;
     }
 
-    public  <R> void plus (Double x){
-        int i = 0;
-        i += x.intValue();
-        System.out.println(tmp);
-        add(x);
-        System.out.println(queue);
-    }
 
-    private void add(Double x) {
+
+    protected void add(Double x) {
         if(isNull(x, answer)){
             return;
         }

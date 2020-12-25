@@ -12,7 +12,7 @@ class CalculatorTest {
     }
     @Test
     public void testAdd_N001(){
-        Calculator calc = new Calculator();
+        Calculator2 calc = new Calculator2();
         calc.plus(1.0);
         assertEquals(calc.getAnswer(), Double.valueOf(1));
         System.out.println();
