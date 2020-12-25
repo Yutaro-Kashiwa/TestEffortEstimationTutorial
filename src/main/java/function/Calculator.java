@@ -24,7 +24,8 @@ public class Calculator<T> {
     }
 
     public void plus (Double p){
-        Double val= temp2(p);
+        Car car = Car.TOYOTA;
+        Car[] val= car.values();
 
         this.val += p.intValue();
         System.out.println(tmpVal);
