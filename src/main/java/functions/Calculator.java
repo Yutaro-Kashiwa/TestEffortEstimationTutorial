@@ -29,10 +29,10 @@ public class Calculator<T> {
         return t;
     }
 
-    public void plus( Double plus){
-        Plus p = new Plus();
-        answer = p.plus_renamed(plus);
+    public  <R> void plus_renamed (Double x){
+        this.answer+=x;
     }
+
 
     public void minus( Double x){
         if(this.isNull(x, answer)){
@@ -111,7 +111,7 @@ public class Calculator<T> {
     }
     public static void main(String[] args){
         Calculator calc = new Calculator();
-        calc.plus(1.0);
+        calc.plus_renamed(1.0);
         System.out.println(calc.getAnswer());
         String a = "/Users/yutarokashiwa/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar,org/opentest4j/AssertionFailedError,org/opentest4j/AssertionFailedError,Normal,5c926c86eeaa81c12cd59061b6a0d03afd5a2f21";
         if(a.contains("/.m2/")){
