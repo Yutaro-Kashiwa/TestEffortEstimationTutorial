@@ -1,5 +1,6 @@
 package functions;
 
+import static functions.Util.getRating;
 import static java.lang.StrictMath.abs;
 
 import java.util.List;
@@ -37,12 +38,7 @@ public class Calculator<T> {
         this.answer+=x;
         getRating();
     }
-    public static int getRating() {
-        return moreThanFiveLateDeliveries() ? 2 : 1;
-    }
-    public static boolean moreThanFiveLateDeliveries() {
-        return 1 > 5;
-    }
+
 
 
     public void minus( Double x){
