@@ -19,7 +19,7 @@ public class Calculator2{
     }
     public Double getAttribute()
     {
-        return Calculator3.tmpAttribute;
+        return Calculator3.getAttribute();
     }
     public static Integer aho(){
         return 1;

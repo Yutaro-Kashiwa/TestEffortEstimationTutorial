@@ -35,7 +35,7 @@ class CalculatorTest {
        assertEquals(answer, Double.valueOf(0.0));
    }
    @Test
-   public void testCalcExtra_N001(){
+   public void testCalc3_N001(){
        Calculator3 calc3 = new Calculator3();
        Double tmpAtribute = calc3.getAttribute();
        assertEquals(tmpAtribute, Double.valueOf(0.0));
