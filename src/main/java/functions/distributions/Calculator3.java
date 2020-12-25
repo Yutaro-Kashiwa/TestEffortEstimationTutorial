@@ -21,12 +21,4 @@ public class Calculator3 extends Calculator {
     {
         return tmpAttribute.getTmpAttribute();
     }
-    public Double check1(Double x){
-        if(X(x) == 1.0)
-            return x;
-        return 0.0;
-    }
-    public Double X(Double x){
-        return x;
-    }
 }

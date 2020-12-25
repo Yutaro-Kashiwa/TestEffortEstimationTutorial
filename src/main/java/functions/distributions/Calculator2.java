@@ -24,4 +24,9 @@ public class Calculator2{
     public static Integer aho(){
         return 1;
     }
+    public Double check1(Double x){
+        if(x == 1.0)
+            return x;
+        return 0.0;
+    }
 }
