@@ -7,7 +7,6 @@ import java.util.List;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
-
     protected Double answer;
     protected T tmp;
     public Calculator(){
@@ -17,6 +16,7 @@ public class Calculator<T> {
         car.values();
     }
 
+    @Deprecated
     public void power(Double x) {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
