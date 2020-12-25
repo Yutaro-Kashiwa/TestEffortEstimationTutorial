@@ -40,12 +40,12 @@ class CalculatorTest {
        Double tmpAtribute = calc3.getAttribute();
        assertEquals(tmpAtribute, Double.valueOf(0.0));
    }
-   @Test
-   public void testMinus_N001(){
-       Minus minus = new Minus();
-       minus.minus(1.0);
-       assertEquals(minus.answer, Double.valueOf(0.0));
-   }
+//    @Test
+//    public void testMinus_N001(){
+//        Minus minus = new Minus();
+//        minus.minus(1.0);
+//        assertEquals(minus.answer, Double.valueOf(0.0));
+//    }
 //    @Test
 //    public void testTimes_N002(){
 //        Calculator calc = new Calculator();
