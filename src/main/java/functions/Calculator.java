@@ -33,14 +33,6 @@ public class Calculator<T> {
         this.answer+=x;
     }
 
-
-    public void minus( Double x){
-        if(this.isNull(x, answer)){
-            return;
-        }
-        this.answer-=x;
-    }
-
     public void times ( Double x){
         if(isStaticNull(x, answer)){
             return;
