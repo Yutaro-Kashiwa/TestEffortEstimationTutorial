@@ -31,7 +31,7 @@ public class Calculator<T> {
         System.out.println(queue);
     }
 
-    private void add(Double x) {
+    protected void add(Double x) {
         if(isNull(x, answer)){
             return;
         }
