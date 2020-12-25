@@ -2,12 +2,15 @@ package functions;
 
 import static java.lang.StrictMath.abs;
 
+import java.util.LinkedList;
 import java.util.List;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
     protected Double answer;
     protected T tmp;
+    private LinkedList<Integer> queue;
+
     public Calculator(){
         answer = 0.0;
         tmp = null;
@@ -29,6 +32,7 @@ public class Calculator<T> {
         i += x.intValue();
         System.out.println(tmp);
         add(x);
+        System.out.println(queue);
     }
 
     private void add(Double x) {
