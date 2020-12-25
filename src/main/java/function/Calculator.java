@@ -22,11 +22,11 @@ public class Calculator<T> {
     public double temp2(double i){
         return i+i;
     }
-    public double temp1(double i){
+    public double temp1(Double i){
         return temp2(i);
     }
     public void plus (Double p){
-        double val=this.temp1(p);
+        Double val=this.temp1(p);
 
         this.val += p.intValue();
         System.out.println(tmpVal);
