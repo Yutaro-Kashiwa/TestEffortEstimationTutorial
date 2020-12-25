@@ -1,9 +1,7 @@
-package functions;
+package function;
 
 import static java.lang.StrictMath.abs;
 
-import java.util.LinkedList;
-import java.util.List;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
