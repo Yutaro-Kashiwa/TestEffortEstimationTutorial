@@ -7,12 +7,11 @@ import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
-    protected Double answer;
+    protected Double answer = 0.0;;
     protected T tmp;
     public LinkedList<Integer> queue;
 
     public Calculator(){
-        answer = 0.0;
         tmp = null;
         Car car = Car.TOYOTA;
         car.values();
