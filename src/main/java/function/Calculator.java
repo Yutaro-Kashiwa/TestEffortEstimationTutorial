@@ -7,6 +7,7 @@ import static java.lang.StrictMath.pow;
 public class Calculator<T> {
     protected Double answer = 0.0;;
     protected T tmpVal;
+    int val = 0;
 
     public Calculator(){
         tmpVal = null;
@@ -20,11 +21,9 @@ public class Calculator<T> {
     }
 
     public void plus (Double p){
-        int val = 0;
         val += p.intValue();
         System.out.println(tmpVal);
         add(p);
-        System.out.println(TMP.queue2);
     }
 
     protected void add(Double x) {
