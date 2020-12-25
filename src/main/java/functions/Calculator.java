@@ -35,7 +35,13 @@ public class Calculator<T> {
             return;
         }
         this.answer+=x;
-        Util.getRating();
+        getRating();
+    }
+    public static int getRating() {
+        return moreThanFiveLateDeliveries() ? 2 : 1;
+    }
+    public static boolean moreThanFiveLateDeliveries() {
+        return 1 > 5;
     }
 
 
