@@ -6,35 +6,25 @@ import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
     protected Double answer = 0.0;;
-    protected T tmpVal;
-    int val = 0;
-    Car car = Car.TOYOTA;
 
     public Calculator(){
-        tmpVal = null;
-        car.values();
     }
 
     public void power(Double x) {
         if (answer==null) return;//ignore
         answer = pow(answer, x);
     }
-    public double temp2(double i){
-        return i+i;
-    }
 
     public void plus (Double p){
-        Car[] val= car.values();
-        this.val += p.intValue();
-        System.out.println(tmpVal);
-        add(p);
+        State s = new State();
+        add(p, s);
     }
 
-    protected void add(Double x) {
+    protected void add(Double x, State s) {
         if(isNull(x, answer)){
             return;
         }
-        this.answer+=x;
+        this.answer+=x+s.getA();
     }
 
     public void minus( Double x){
