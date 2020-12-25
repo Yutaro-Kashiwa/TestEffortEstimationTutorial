@@ -24,7 +24,6 @@ public class Calculator<T> {
         return t;
     }
 
-    @SuppressWarnings("")
     public  <R> void plus (Double x){
         int i = 0;
         i += x.intValue();
