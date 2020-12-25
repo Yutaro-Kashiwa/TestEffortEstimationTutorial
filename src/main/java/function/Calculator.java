@@ -26,14 +26,16 @@ public class Calculator<T> {
     public void plus (Double x){
         int i = 0;
         i += x.intValue();
+        if (i > 0){
+            return;
+        }
         System.out.println(tmp);
         add(x);
         System.out.println(queue);
     }
 
     protected void add(Double x) {
-        boolean a = isNull(x, answer);
-        if(a){
+        if(isNull(x, answer)){
             return;
         }
         this.answer+=x;
