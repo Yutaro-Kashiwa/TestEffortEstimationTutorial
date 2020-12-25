@@ -42,8 +42,8 @@ class CalculatorTest {
    }
    @Test
    public void testCheck1_N001(){
-        Calculator2 calc2 = new Calculator2();
-        Double t = calc2.check1(1.0);
+        Calculator3 calc3 = new Calculator3();
+        Double t = calc3.check1(1.0);
         assertEquals(t, Double.valueOf(1.0));
         System.out.println();
         common();

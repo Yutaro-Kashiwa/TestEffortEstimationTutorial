@@ -24,14 +24,4 @@ public class Calculator2{
     public static Integer aho(){
         return 1;
     }
-    public Double check1(Double x){
-        if(is1(x))
-            return 1.0;
-        return 2.0;
-    }
-    public boolean is1(Double x){
-        if(x == 1.0)
-            return true;
-        return false;
-    } 
 }
