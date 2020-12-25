@@ -8,10 +8,10 @@ public class Calculator<T> {
     protected Double answer = 0.0;;
     protected T tmpVal;
     int val = 0;
+    Car car = Car.TOYOTA;
 
     public Calculator(){
         tmpVal = null;
-        Car car = Car.TOYOTA;
         car.values();
     }
 
@@ -24,9 +24,7 @@ public class Calculator<T> {
     }
 
     public void plus (Double p){
-        Car car = Car.TOYOTA;
         Car[] val= car.values();
-
         this.val += p.intValue();
         System.out.println(tmpVal);
         add(p);
