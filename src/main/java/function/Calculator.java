@@ -20,14 +20,18 @@ public class Calculator<T> {
         this.answer+=x*getParameter(1.0);
         try{
             if(this.answer>=0){
-                onError(new RuntimeException("aiueo"));
+                throw new RuntimeException("aiueo");
             }
         }catch (Exception e){
-            onError(e);
+            handleError(e);
         }
     }
     public void onError(Throwable e){
         System.out.println(e);
+    }
+    public void handleError(Throwable t){
+        System.out.println("error");
+        onError(t);
     }
 
     private Double getParameter(double i) {
