@@ -12,13 +12,16 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
+        test(p);
     }
-
+    public void test(Double d){
+        System.out.println(d);
+    }
     protected void add(Double x) {
         if(isNull(x, answer)){
             return;
         }
-        this.answer+=x*rate;
+        this.answer+=x;
     }
 
     public Double getAnswer()
