@@ -43,7 +43,7 @@ class CalculatorTest {
    @Test
    public void testCheck1_N001(){
         Calculator3 calc3 = new Calculator3();
-        Double t = calc3.check1_Rename(1.0);
+        Double t = calc3.check1_Rename();
         assertEquals(t, Double.valueOf(1.0));
         System.out.println();
         common();

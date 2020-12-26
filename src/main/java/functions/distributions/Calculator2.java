@@ -5,6 +5,7 @@ import functions.*;
 import static java.lang.StrictMath.pow;
 
 public class Calculator2{
+    private Calculator3 calculator3;
     public Double getAnswer()
     {
         //This over ride is no use
@@ -23,8 +24,8 @@ public class Calculator2{
     }
     public Double aho(){
         double a = 1.0;
-        double b = a + Calculator3.check1_Rename(a);
-        double c = b + Calculator3.check1_Rename(b);
+        double b = a + calculator3.check1_Rename();
+        double c = b + calculator3.check1_Rename();
         return c;
     }
 }
