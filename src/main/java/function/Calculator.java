@@ -9,14 +9,8 @@ import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
     protected Double answer = 0.0;
-    public class Taple{
-        double key;
-        double val;
-    };
-    Taple t;
-    public Calculator(){
-        t = new Taple();
-    }
+    double key;
+    double val;
 
     public void plus (Double p){
         add(p);
@@ -24,18 +18,17 @@ public class Calculator<T> {
 
     protected void add(Double x) {
         double sq = x*x;
-        t.key=x;
-        t.val=sq;
-
-        show(t);
+        this.key = x;
+        this.val = sq;
         if(isNull(x, answer)){
             return;
         }
         this.answer+=x;
+        show();
     }
-    public void show(Taple t){
-        System.out.println("key: "+t.key);
-        System.out.println("val: "+t.val);
+    public void show(){
+        System.out.println("key: "+key);
+        System.out.println("val: "+val);
     }
 
     public Double getAnswer()
