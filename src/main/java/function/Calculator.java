@@ -12,8 +12,7 @@ public class Calculator<T> {
 
     public Double getAnswer()
     {
-        double a = answer;
-        return a;
+        return answer;
     }
 
     boolean isNull(Double x, Double answer) {
