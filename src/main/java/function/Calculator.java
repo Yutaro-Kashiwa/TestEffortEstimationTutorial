@@ -25,8 +25,7 @@ public class Calculator<T> {
     }
 
     boolean isNull(Double x, Double answer) {
-        boolean tf = this.getIsNull2(x, answer);
-        return tf;
+        return this.getIsNull2(x, answer);
     }
 
     private boolean getIsNull2(Double x, Double answer) {
