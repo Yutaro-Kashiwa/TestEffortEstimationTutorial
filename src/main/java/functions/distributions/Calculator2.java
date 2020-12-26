@@ -21,7 +21,10 @@ public class Calculator2{
     {
         return Calculator3.getAttribute();
     }
-    public static Integer aho(){
-        return 1;
+    public Double aho(){
+        double a = 1.0;
+        double b = a + Calculator3.check1_Rename(a);
+        double c = b + Calculator3.check1_Rename(b);
+        return c;
     }
 }
