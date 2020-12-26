@@ -13,7 +13,7 @@ class CalculatorTest {
 
     @Test
     public void testAdd_N001(){
-        SubCalculator calc = new SubCalculator();
+        Calculator calc = new Calculator();
         calc.plus(1.0);
         assertEquals(calc.getAnswer(), Double.valueOf(1));
         System.out.println();

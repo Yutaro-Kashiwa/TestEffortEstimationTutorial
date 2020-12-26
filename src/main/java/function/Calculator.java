@@ -8,7 +8,16 @@ public class Calculator<T> {
     protected Double answer = 0.0;;
     public Calculator(){
     }
+    public void plus (Double p){
+        add(p);
+    }
 
+    protected void add(Double x) {
+        if(isNull(x, answer)){
+            return;
+        }
+        this.answer+=x;
+    }
 
     public Double getAnswer()
     {
