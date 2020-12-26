@@ -25,7 +25,8 @@ public class Calculator<T> {
     }
 
     boolean isNull(Double x, Double answer) {
-        return x==null|answer==null;
+        boolean tf = x==null|answer==null;
+        return tf;
     }
 
     public void minus( Double x){
