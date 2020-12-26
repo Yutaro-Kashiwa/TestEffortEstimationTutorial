@@ -13,12 +13,14 @@ public class Calculator<T> {
         add(p);
     }
 
-    protected void add(Object x) {
+    protected void add(Double x) {
         if(isNull(x, answer)){
             return;
         }
-        this.answer+=(Double)x*getParameter(1.0);
+        this.answer+=x*getParameter(1.0);
+        System.out.println(x);
     }
+
 
     private Double getParameter(double i) {
         return i;
