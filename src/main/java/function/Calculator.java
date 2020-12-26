@@ -13,10 +13,11 @@ public class Calculator<T> {
     }
 
     protected void add(Double x) {
+        int rate = 1;
         if(isNull(x, answer)){
             return;
         }
-        this.answer+=x;
+        this.answer+=x*rate;
     }
 
     public Double getAnswer()
