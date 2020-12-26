@@ -1,27 +1,30 @@
 package function;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static java.lang.StrictMath.abs;
 
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
-    protected Double answer = 0.0;;
-    public Calculator(){
-    }
+    protected Double answer = 0.0;
+
     public void plus (Double p){
         add(p);
     }
 
     protected void add(Double x) {
-        final double temp = 2 * (x + x);
-        System.out.println(temp);
-        final double sq = x * x;
-        System.out.println(sq);
-
+        double sq = x*x;
+        show(x, sq);
         if(isNull(x, answer)){
             return;
         }
         this.answer+=x;
+    }
+    public void show(double key, double val){
+        System.out.println("key: "+key);
+        System.out.println("val: "+val);
     }
 
     public Double getAnswer()
