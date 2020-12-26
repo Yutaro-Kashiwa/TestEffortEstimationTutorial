@@ -6,12 +6,12 @@ import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
     protected Double answer = 0.0;
-    private static final String EMPTY = "";
+
     public Calculator(){
     }
     public void plus (Double p){
         add(p);
-        test(EMPTY);
+        test("");
     }
     public void test(String d){
         System.out.println(d);
