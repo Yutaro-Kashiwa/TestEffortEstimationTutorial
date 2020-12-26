@@ -18,9 +18,11 @@ public class Calculator<T> {
             return;
         }
         this.answer+=x*getParameter(1.0);
+        print(x);
+    }
+    public void print(Object x){
         System.out.println(x);
     }
-
 
     private Double getParameter(double i) {
         return i;
