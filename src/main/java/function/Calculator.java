@@ -18,10 +18,16 @@ public class Calculator<T> {
             return;
         }
         this.answer+=x*getParameter(1.0);
-        print(x);
+        try{
+            if(this.answer>=0){
+                onError(new RuntimeException("aiueo"));
+            }
+        }catch (Exception e){
+            onError(e);
+        }
     }
-    public void print(Object x){
-        System.out.println(x);
+    public void onError(Throwable e){
+        System.out.println(e);
     }
 
     private Double getParameter(double i) {
