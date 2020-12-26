@@ -22,7 +22,7 @@ public class Calculator3 extends Calculator {
         return tmpAttribute.getTmpAttribute();
     }
     public Double check1_Rename(Double x){
-        if(x == 1.0)
+        if(x >= 1.0)
             return x;
         return 0.0;
     }
