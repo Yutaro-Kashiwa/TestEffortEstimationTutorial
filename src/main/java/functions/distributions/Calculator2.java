@@ -23,9 +23,9 @@ public class Calculator2{
         return Calculator3.getAttribute();
     }
     public Double aho(){
-        double a = 1.0;
-        double b = a + calculator3.check1_Rename();
-        double c = b + calculator3.check1_Rename();
-        return c;
+        Double tmp = 0.0;
+        System.out.println("tmp1 = " + tmp.toString());
+        tmp = 1.0;
+        return tmp;
     }
 }

@@ -26,7 +26,7 @@ class CalculatorTest {
    @Test
    public void testaho_N002(){
     Calculator2 calc2 = new Calculator2();
-    assertEquals(calc2.aho(), Double.valueOf(3.0));
+    assertEquals(calc2.aho(), Double.valueOf(1.0));
    }
    @Test
    public void testCalc2_N001(){
