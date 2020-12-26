@@ -12,7 +12,7 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
-        test(p);
+        test(new Double(1.0));
     }
     public void test(Double d){
         System.out.println(d);
