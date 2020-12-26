@@ -7,8 +7,9 @@ public class SubCalculator extends Calculator{
 
     }
     public void plus (Double p){
-        add(p+plusVal);
-        temp(1);
+        if (temp(1)==0){
+            add(p+plusVal);
+        }
     }
 
     protected void add(Double x) {
@@ -17,14 +18,15 @@ public class SubCalculator extends Calculator{
         }
         this.answer+=x;
     }
-    void temp(int resize){
+    int temp(int resize){
         final boolean isMacOs = "aaa".toUpperCase().indexOf("MAC") > -1;
         final boolean isIE = "aaa".toUpperCase().indexOf("IE") > -1;
         final boolean wasResized = resize > 0;
 
         if (isMacOs && isIE && wasInitialized() && wasResized) {
-            // do something
+            return 1;
         }
+        return 0;
     }
 
     private boolean wasInitialized() {
