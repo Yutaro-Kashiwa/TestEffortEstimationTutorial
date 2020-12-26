@@ -25,7 +25,7 @@ public class Calculator2{
     public Double aho(){
         Double tmp = 0.0;
         System.out.println("tmp1 = " + tmp.toString());
-        tmp = 1.0;
-        return tmp;
+        double anotherTmp = 1.0;
+        return anotherTmp;
     }
 }
