@@ -5,17 +5,15 @@ import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
-    private static final Double DEFAULT = 1.0;
     protected Double answer = 0.0;
-    public final static int rate = 1;
 
     public Calculator(){
     }
     public void plus (Double p){
         add(p);
-        test(DEFAULT);
+        test(new String());
     }
-    public void test(Double d){
+    public void test(String d){
         System.out.println(d);
     }
     protected void add(Double x) {
