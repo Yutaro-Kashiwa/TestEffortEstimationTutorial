@@ -9,10 +9,16 @@ public class Calculator<T> {
     public Calculator(){
     }
 
-
+    protected void plus(Double x) {
+        if(isNull(x, answer)){
+            return;
+        }
+        this.answer+=x;
+    }
     public Double getAnswer()
     {
-        return answer;
+        double a = answer;
+        return a;
     }
 
     boolean isNull(Double x, Double answer) {
