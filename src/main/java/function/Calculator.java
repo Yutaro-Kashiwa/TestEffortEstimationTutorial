@@ -11,6 +11,15 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
+        int i = process(p);
+    }
+
+    private int process(double d) {
+        int i = (int) d;
+        return this.process2(i);
+    }
+    private int process2(int i) {
+        return i;
     }
 
     protected void add(Double x) {
