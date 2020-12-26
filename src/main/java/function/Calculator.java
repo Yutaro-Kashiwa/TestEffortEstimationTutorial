@@ -13,10 +13,10 @@ public class Calculator<T> {
     }
 
     protected void add(Double x) {
-        double temp = 2 * (x + x);
+        final double temp = 2 * (x + x);
         System.out.println(temp);
-        temp = x * x;
-        System.out.println(temp);
+        final double sq = x * x;
+        System.out.println(sq);
 
         if(isNull(x, answer)){
             return;
