@@ -7,7 +7,8 @@ public class SubCalculator extends Calculator{
 
     }
     public void plus (Double p){
-        if (temp(1)==0){
+        int ans = temp(1);
+        if (ans == 0){
             add(p+plusVal);
         }
     }
