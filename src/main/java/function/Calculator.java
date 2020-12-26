@@ -17,11 +17,11 @@ public class Calculator<T> {
         if(isNull(x, answer)){
             return;
         }
-        this.answer+=x*getParameter();
+        this.answer+=x*getParameter(1.0);
     }
 
-    private Double getParameter() {
-        return 1.0;
+    private Double getParameter(double i) {
+        return i;
     }
 
     public Double getAnswer()
