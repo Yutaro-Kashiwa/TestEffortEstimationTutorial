@@ -18,10 +18,11 @@ public class SubCalculator extends Calculator{
         this.answer+=x;
     }
     void temp(int resize){
-        if (("aaa".toUpperCase().indexOf("MAC") > -1) &&
-                ("aaa".toUpperCase().indexOf("IE") > -1) &&
-                wasInitialized() && resize > 0 )
-        {
+        final boolean isMacOs = "aaa".toUpperCase().indexOf("MAC") > -1;
+        final boolean isIE = "aaa".toUpperCase().indexOf("IE") > -1;
+        final boolean wasResized = resize > 0;
+
+        if (isMacOs && isIE && wasInitialized() && wasResized) {
             // do something
         }
     }
