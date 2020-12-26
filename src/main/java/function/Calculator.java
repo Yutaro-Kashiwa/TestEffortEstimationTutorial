@@ -25,8 +25,14 @@ public class Calculator<T> {
     }
 
     boolean isNull(Double x, Double answer) {
+        boolean tf = this.getIsNull2(x, answer);
+        return tf;
+    }
+
+    private boolean getIsNull2(Double x, Double answer) {
         return x==null|answer==null;
     }
+
 
     public void minus( Double x){
         if(this.isNull(x, answer)){
