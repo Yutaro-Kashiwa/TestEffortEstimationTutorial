@@ -11,21 +11,13 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
-        int i = process((int) (double) p);
     }
 
-    private int process(int d) {
-        return this.process2(d);
-    }
-    private int process2(int i) {
-        return i;
-    }
-
-    protected void add(Double x) {
+    protected void add(Object x) {
         if(isNull(x, answer)){
             return;
         }
-        this.answer+=x*getParameter(1.0);
+        this.answer+=(Double)x*getParameter(1.0);
     }
 
     private Double getParameter(double i) {
@@ -37,7 +29,7 @@ public class Calculator<T> {
         return answer;
     }
 
-    boolean isNull(Double x, Double answer) {
+    boolean isNull(Object x, Double answer) {
         if (x==null|answer==null){
             return true;
         }
