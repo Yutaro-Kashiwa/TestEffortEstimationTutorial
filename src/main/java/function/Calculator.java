@@ -5,6 +5,7 @@ import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
+    private static final Double DEFAULT = 1.0;
     protected Double answer = 0.0;
     public final static int rate = 1;
 
@@ -12,7 +13,7 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
-        test(new Double(1.0));
+        test(DEFAULT);
     }
     public void test(Double d){
         System.out.println(d);
