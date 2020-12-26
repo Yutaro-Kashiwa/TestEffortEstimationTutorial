@@ -8,30 +8,20 @@ public class Calculator<T> {
     protected Double answer = 0.0;;
     public Calculator(){
     }
-    public void plus (Double p){
-        add(p);
-    }
 
-    protected void add(Double x) {
-        if(isNull(x, answer)){
-            return;
-        }
-        this.answer+=x;
-    }
 
     public Double getAnswer()
     {
-        return answer;
+        double a = answer;
+        return a;
     }
 
     boolean isNull(Double x, Double answer) {
-        return this.getIsNull2(x, answer);
+        if (x==null|answer==null){
+            return true;
+        }
+        return false;
     }
-
-    private boolean getIsNull2(Double x, Double answer) {
-        return x==null|answer==null;
-    }
-
 
     public void minus( Double x){
         if(this.isNull(x, answer)){
