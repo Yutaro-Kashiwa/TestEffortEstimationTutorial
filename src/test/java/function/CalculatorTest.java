@@ -13,7 +13,7 @@ class CalculatorTest {
 
     @Test
     public void testAdd_N001(){
-        Calculator calc = new Calculator();
+        SubCalculator calc = new SubCalculator();
         calc.plus(1.0);
         assertEquals(calc.getAnswer(), Double.valueOf(1));
         System.out.println();
@@ -26,12 +26,12 @@ class CalculatorTest {
 //        calc.plus(0.0);
 //        assertEquals(calc.getAnswer(), Double.valueOf(0));
 //    }
-//    @Test
-//    public void testMinus_N001(){
-//        Calculator calc = new Calculator();
-//        calc.minus(1.0);
-//        assertEquals(calc.getAnswer(), Double.valueOf(-1));
-//    }
+    @Test
+    public void testMinus_N001(){
+        Calculator calc = new Calculator();
+        calc.minus(1.0);
+        assertEquals(calc.getAnswer(), Double.valueOf(-1));
+    }
 //    @Test
 //    public void testMinus_N002(){
 //        Calculator calc = new Calculator();

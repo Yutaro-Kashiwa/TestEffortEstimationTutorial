@@ -6,27 +6,14 @@ import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
     protected Double answer = 0.0;;
-    protected int plusVal = 0;
     public Calculator(){
     }
 
-
-    public void plus (Double p){
-        add(p+plusVal);
-    }
-
-    protected void add(Double x) {
-        if(isNull(x, answer)){
-            return;
-        }
-        this.answer+=x;
-    }
 
     public Double getAnswer()
     {
         return answer;
     }
-
 
     boolean isNull(Double x, Double answer) {
         if (x==null|answer==null){
