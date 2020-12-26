@@ -11,12 +11,11 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
-        int i = process(p);
+        int i = process((int) (double) p);
     }
 
-    private int process(double d) {
-        int i = (int) d;
-        return this.process2(i);
+    private int process(int d) {
+        return this.process2(d);
     }
     private int process2(int i) {
         return i;
