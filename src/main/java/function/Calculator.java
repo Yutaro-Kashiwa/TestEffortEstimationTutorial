@@ -13,7 +13,7 @@ public class Calculator<T> {
         Parameter para = new Parameter();
         para.i = 0;
         para.j = 0;
-        temp(para);
+        temp(para.j, para.i);
     }
 
     private void temp(double j, int i) {
