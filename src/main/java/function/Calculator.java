@@ -4,18 +4,15 @@ import static java.lang.StrictMath.abs;
 
 import static java.lang.StrictMath.pow;
 
-public class Calculator<T> {
+public class Calculator<T> extends Base{
     protected Double answer = 0.0;;
     boolean a;
-    boolean b;
     public Calculator(){
         a =true;
-        b= true;
     }
     public void plus (Double p){
-        if(b)
+        if(a)
             add(p);
-
     }
 
     protected void add(Double x) {
