@@ -9,7 +9,10 @@ public class Calculator<T> {
     public Calculator(){
     }
     public void plus (Double p){
-        add(p);
+        double dp = p;
+        double ddp = dp;
+        add(ddp);
+
     }
 
     protected void add(Double x) {
