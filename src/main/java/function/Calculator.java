@@ -11,8 +11,7 @@ public class Calculator<T> {
     public Calculator(){
     }
     public void plus (Double p){
-        this.dp = p;
-        this.ddp = dp>0 ? 10.0 : 8.0;
+        this.ddp = p>0 ? 10.0 : 8.0;
         add(ddp);
 
     }
