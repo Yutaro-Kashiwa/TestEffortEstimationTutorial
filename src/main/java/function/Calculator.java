@@ -13,7 +13,7 @@ public class Calculator<T> {
         b= true;
     }
     public void plus (Double p){
-        if(a)
+        if(b)
             add(p);
 
     }
