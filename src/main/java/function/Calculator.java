@@ -9,7 +9,8 @@ public class Calculator<T> {
     public Calculator(){
     }
     public void plus (Double p){
-        double ddp = p;
+        double dp = p;
+        double ddp = dp>0 ? 10.0 : 8.0;
         add(ddp);
 
     }
