@@ -11,7 +11,7 @@ public class Calculator<T> extends Base{
         a =true;
     }
     public void plus (Double p){
-        if(a)
+        if(b)
             add(p);
     }
 
