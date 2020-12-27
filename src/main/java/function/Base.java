@@ -1,7 +1,8 @@
 package function;
 
 public class Base {
-    protected Double ans = 0.0;;
+    protected Double ans = 0.0;
+    int intval;
     protected void add(Double x) {
         if(isNull(x, ans)){
             return;
