@@ -3,10 +3,13 @@ package function;
 import static java.lang.StrictMath.abs;
 
 public class Calculator<T> extends Base{
+    int i;
+
     public Calculator(){
     }
     public void plus (Double p){
         add(p);
+        System.out.println(i);
     }
 
 
