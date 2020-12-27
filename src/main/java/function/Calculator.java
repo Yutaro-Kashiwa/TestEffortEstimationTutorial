@@ -10,12 +10,17 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
-        temp(0.0, 0);
+        Parameter para = new Parameter();
+        para.i = 0;
+        para.j = 0;
+        temp(para);
     }
 
     private void temp(double j, int i) {
     }
-
+    private void temp(Parameter p) {
+        temp(p.j, p.i);
+    }
     protected void add(Double x) {
         if(isNull(x, answer)){
             return;
