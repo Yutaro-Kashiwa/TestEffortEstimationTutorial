@@ -10,6 +10,14 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
+        int i = 0;
+        if(p>0){
+            i= (int) (double) p;
+        }
+        temp(i);
+    }
+    public void temp(int i){
+        System.out.println(i);
     }
 
     protected void add(Double x) {
