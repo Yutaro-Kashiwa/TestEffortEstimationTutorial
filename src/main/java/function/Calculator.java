@@ -6,15 +6,16 @@ import static java.lang.StrictMath.pow;
 
 public class Calculator<T> {
     protected Double answer = 0.0;;
+    private int val;
     public Calculator(){
     }
     public void plus (Double p){
         add(p);
-        int i = 0;
+        val = 0;
         if(p>0){
-            i= (int) (double) p;
+            val= (int) (double) p;
         }
-        temp(i);
+        temp(val);
     }
     public void temp(int i){
         System.out.println(i);
