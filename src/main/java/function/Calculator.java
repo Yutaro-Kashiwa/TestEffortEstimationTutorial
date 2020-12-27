@@ -10,10 +10,10 @@ public class Calculator<T> {
     }
     public void plus (Double p){
         add(p);
-        temp(0, 0.0);
+        temp(0.0, 0);
     }
 
-    private void temp(int i, double j) {
+    private void temp(double j, int i) {
     }
 
     protected void add(Double x) {
