@@ -13,13 +13,11 @@ public class Calculator<T> {
         Parameter para = new Parameter();
         para.i = 0;
         para.j = 0;
-        temp(para.j, para.i, 0.0);
+        temp(para.j, para.i, 0.0, 1);
     }
 
-    private void temp(double j, int i, Double a) {
-    }
-    private void temp(Parameter p) {
-        temp(p.j, p.i, 0.0);
+    private void temp(double j, int i, Double a, int k) {
+        System.out.println(k);
     }
     protected void add(Double x) {
         if(isNull(x, answer)){
