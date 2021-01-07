@@ -8,11 +8,11 @@ public class Calculator<T> {
     protected Double answer = 0.0;;
     public Calculator(){
     }
-    public void plus (Double p){
-        add(p);
+    public void plus (Double p, int i){
+        add(p+ i);
         Parameter para = new Parameter();
-        para.i = 0;
-        para.j = 0;
+        para.i = 0 + i;
+        para.j = 0+ i;
         temp(para.j, para.i, 0.0, 1);
     }
 
