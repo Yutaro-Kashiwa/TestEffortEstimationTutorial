@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
     Calculator calc;
+    double ans;
     @Deprecated
     public static void common(){
         Integer i = 0;
@@ -15,12 +16,13 @@ class CalculatorTest {
     @BeforeAll
     public void init(){
         calc = new Calculator();
+        calc.plus(1.0, 1);
+        ans = calc.getAnswer();
     }
 
     @Test
     public void testAdd_N001(){
-        calc.plus(1.0, 1);
-        assertEquals(calc.getAnswer(), Double.valueOf(2));
+        assertEquals(ans, 2.0);
         System.out.println();
         common();
     }
