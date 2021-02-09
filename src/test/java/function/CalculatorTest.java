@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
-    Calculator calc;
+    CalculatorDummy calc;
     double ans;
     @Deprecated
     public static void common(){
@@ -15,7 +15,7 @@ class CalculatorTest {
     }
     @BeforeAll
     public void init(){
-        calc = new Calculator();
+        calc = new CalculatorDummy<>();
         calc.plus(1.0, 1);
         ans = calc.getAnswer();
     }

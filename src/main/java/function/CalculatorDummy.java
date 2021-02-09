@@ -4,9 +4,9 @@ import static java.lang.StrictMath.abs;
 
 import static java.lang.StrictMath.pow;
 
-public class Calculator<T> {
+public class CalculatorDummy<T> {
     protected Double answer = 0.0;;
-    public Calculator(){
+    public CalculatorDummy(){
     }
     public void plus (Double p, int i){
         add(p+ i);
