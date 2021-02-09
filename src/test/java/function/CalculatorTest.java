@@ -1,5 +1,6 @@
 package function;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,12 +11,16 @@ class CalculatorTest {
         Integer i = 0;
         i += 1;
     }
+    @BeforeAll
+    public void init(){
+        this is the cause of compile error;
+    }
 
     @Test
     public void testAdd_N001(){
         Calculator calc = new Calculator();
         calc.plus(1.0, 1);
-        assertEquals(calc.getAnswer(), Double.valueOf(1));
+        assertEquals(calc.getAnswer(), Double.valueOf(2));
         System.out.println();
         common();
     }
