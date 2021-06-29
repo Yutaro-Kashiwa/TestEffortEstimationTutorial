@@ -1,7 +1,7 @@
 public class Calculator {
     double answer;
     public Calculator(){
-        answer = 0;
+        answer = 10;
     }
     public void plus(int x){
         this.answer+=x;
@@ -13,6 +13,9 @@ public class Calculator {
         this.answer*=x;
     }
     public void divided(int x){
+        if (x==0){
+            return;
+        }
         this.answer/=x;
     }
     public double getAnswer(){
