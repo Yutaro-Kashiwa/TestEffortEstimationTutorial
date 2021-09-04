@@ -7,7 +7,11 @@
     <groupId>jp.ac.kyushu-u.ait</groupId>
     <artifactId>TestEffortEstimation</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>Calc</module>
+        <module>Core</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

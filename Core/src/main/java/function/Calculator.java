@@ -1,7 +1,9 @@
+package function;
+
 public class Calculator {
     double answer;
     public Calculator(){
-        answer = 10;
+        answer = 0;
     }
     public void plus(int x){
         this.answer+=x;
