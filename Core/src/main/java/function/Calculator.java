@@ -14,7 +14,7 @@ public class Calculator {
     public void times(int x){
         this.answer*=x;
     }
-    public void devided(int x){
+    public void divided(int x){
         if (x==0){
             return;
         }
