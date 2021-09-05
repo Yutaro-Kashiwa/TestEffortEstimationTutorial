@@ -11,7 +11,7 @@ public class Calculator {
     public void minos(int x){
         this.answer-=x;
     }
-    public void times(int x){
+    public void multiply(int x){
         this.answer*=x;
     }
     public void divided(int x){
