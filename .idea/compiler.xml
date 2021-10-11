@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TestEffortEstimation" />
+        <module name="TestEffortEstimationTutorial" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="TestEffortEstimation" target="8" />
+      <module name="TestEffortEstimationTutorial" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

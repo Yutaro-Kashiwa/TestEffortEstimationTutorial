@@ -1,13 +1,12 @@
 package functions;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
+import static junit.framework.Assert.assertEquals;
+
 class CalculatorTest {
-    @Deprecated
+
     public static void common(){
         Integer i = 0;
         i += 1;
