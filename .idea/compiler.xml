@@ -11,8 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="TestEffortEstimation" target="8" />
-      <module name="TestEffortEstimationTutorial" target="1.5" />
+      <module name="TestEffortEstimationTutorial" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
