@@ -17,11 +17,61 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+
     </dependencies>
-
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>7</maven.compiler.source>
+        <maven.compiler.target>7</maven.compiler.target>
     </properties>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>2.22.1</version>-->
+<!--                <configuration>-->
+<!--                    <useSystemClassLoader>false</useSystemClassLoader>-->
 
+<!--                    <forkMode>once</forkMode>-->
+<!--                    <systemProperties>-->
+<!--                        <property>-->
+<!--                            <name>clover.server</name>-->
+<!--                            <value>true</value>-->
+<!--                        </property>-->
+<!--                        <property>-->
+<!--                            <name>clover.distributed.coverage</name>-->
+<!--                            <value>ON</value>-->
+<!--                        </property>-->
+<!--                    </systemProperties>-->
+
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.openclover</groupId>-->
+<!--                <artifactId>clover-maven-plugin</artifactId>-->
+<!--                <version>4.2.0</version>-->
+<!--                <configuration>-->
+<!--                    <distributedCoverage/>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>clover-instrument</id>-->
+<!--                        <phase>generate-sources</phase>-->
+<!--                        <goals>-->
+<!--                            &lt;!&ndash; <goal>setup</goal>  &ndash;&gt;-->
+<!--                            <goal>instrument</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                    <execution>-->
+<!--                        <id>clover-test</id>-->
+<!--                        <phase>test</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>aggregate</goal>-->
+<!--                            <goal>clover</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 </project>

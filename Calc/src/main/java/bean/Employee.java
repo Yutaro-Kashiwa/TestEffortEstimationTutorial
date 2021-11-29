@@ -12,6 +12,21 @@ public class Employee {
     }
     public void recordWorking(int hours){
         this.totalWorkingHours+=hours;
+        if (this.totalWorkingHours>100){
+            print();
+        }
 
+    }
+
+    private void print() {
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
     }
 }

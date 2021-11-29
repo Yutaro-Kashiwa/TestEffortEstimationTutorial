@@ -1,0 +1,2 @@
+processClover (  {"children":["work/","bean/","function/"],"name":"Clover database Mon Nov 29 2021 14:22:52 CET","stats":{"AvgMethodComplexity":1.2,"Complexity":12,"ErroneousTests":0,"FailingTests":0,"FilteredElements":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":3,"TotalPercentageCovered":95.12195,"TotalStatements":27,"UncoveredElements":2},"title":"TestEffortEstimation 1.0-SNAPSHOT (Aggregated)"}
+ ); 

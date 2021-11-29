@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1638192177663" clover="4.2.0">
+   <project name="Calc 1.0-SNAPSHOT" timestamp="1638192169814">
+      <metrics coveredelements="25" complexity="5" loc="45" methods="4" classes="2" statements="19" packages="2" coveredconditionals="2" coveredmethods="4" elements="25" ncloc="39" files="2" conditionals="2" coveredstatements="19"/>
+      <package name="work">
+         <metrics coveredelements="5" complexity="1" loc="13" methods="1" classes="1" statements="4" coveredconditionals="0" coveredmethods="1" elements="5" ncloc="11" files="1" conditionals="0" coveredstatements="4"/>
+         <file path="/Users/yutarokashiwa/Documents/200_Development/210_Git/TestEffortEstimationTutorial/Calc/src/main/java/work/SalaryCalculation.java" name="SalaryCalculation.java">
+            <metrics coveredelements="5" coveredconditionals="0" complexity="1" loc="13" coveredmethods="1" methods="1" elements="5" classes="1" ncloc="11" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="SalaryCalculation">
+               <metrics coveredelements="5" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="5" statements="4" conditionals="0" coveredstatements="4"/>
+            </class>
+            <line complexity="1" visibility="public" signature="calc(Employee) : double" num="7" count="2" type="method"/>
+            <line num="8" count="2" type="stmt"/>
+            <line num="9" count="2" type="stmt"/>
+            <line num="10" count="2" type="stmt"/>
+            <line num="11" count="2" type="stmt"/>
+         </file>
+      </package>
+      <package name="bean">
+         <metrics coveredelements="20" complexity="4" loc="32" methods="3" classes="1" statements="15" coveredconditionals="2" coveredmethods="3" elements="20" ncloc="28" files="1" conditionals="2" coveredstatements="15"/>
+         <file path="/Users/yutarokashiwa/Documents/200_Development/210_Git/TestEffortEstimationTutorial/Calc/src/main/java/bean/Employee.java" name="Employee.java">
+            <metrics coveredelements="20" coveredconditionals="2" complexity="4" loc="32" coveredmethods="3" methods="3" elements="20" classes="1" ncloc="28" statements="15" conditionals="2" coveredstatements="15"/>
+            <class name="Employee">
+               <metrics coveredelements="20" coveredconditionals="2" complexity="4" coveredmethods="3" methods="3" elements="20" statements="15" conditionals="2" coveredstatements="15"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Employee(String,int)" num="8" count="2" type="method"/>
+            <line num="9" count="2" type="stmt"/>
+            <line num="10" count="2" type="stmt"/>
+            <line num="11" count="2" type="stmt"/>
+            <line complexity="2" visibility="public" signature="recordWorking(int) : void" num="13" count="7" type="method"/>
+            <line num="14" count="7" type="stmt"/>
+            <line num="15" count="7" type="stmt"/>
+            <line falsecount="6" truecount="1" num="15" type="cond"/>
+            <line num="16" count="1" type="stmt"/>
+            <line complexity="1" visibility="private" signature="print() : void" num="21" count="1" type="method"/>
+            <line num="22" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+            <line num="25" count="1" type="stmt"/>
+            <line num="26" count="1" type="stmt"/>
+            <line num="27" count="1" type="stmt"/>
+            <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="Calc 1.0-SNAPSHOT" timestamp="1638192169814">
+      <metrics coveredelements="17" complexity="2" loc="33" methods="2" classes="1" statements="15" packages="1" coveredconditionals="0" coveredmethods="2" elements="17" ncloc="28" files="1" conditionals="0" coveredstatements="15"/>
+      <package name="work">
+         <metrics coveredelements="17" complexity="2" loc="33" methods="2" classes="1" statements="15" coveredconditionals="0" coveredmethods="2" elements="17" ncloc="28" files="1" conditionals="0" coveredstatements="15"/>
+         <file path="/Users/yutarokashiwa/Documents/200_Development/210_Git/TestEffortEstimationTutorial/Calc/src/test/java/work/TestSalaryCalculation.java" name="TestSalaryCalculation.java">
+            <metrics coveredelements="17" coveredconditionals="0" complexity="2" loc="33" coveredmethods="2" methods="2" elements="17" classes="1" ncloc="28" statements="15" conditionals="0" coveredstatements="15"/>
+            <class name="TestSalaryCalculation">
+               <metrics coveredelements="17" complexity="2" methods="2" testruns="2" statements="15" coveredconditionals="0" coveredmethods="2" elements="17" testfailures="0" testduration="0.008" conditionals="0" coveredstatements="15" testpasses="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testCalc001() : void" num="11" testsuccess="true" count="1" testduration="0.008" type="method"/>
+            <line num="13" count="1" type="stmt"/>
+            <line num="14" count="1" type="stmt"/>
+            <line num="15" count="1" type="stmt"/>
+            <line num="16" count="1" type="stmt"/>
+            <line num="17" count="1" type="stmt"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testCalc002() : void" num="22" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="24" count="1" type="stmt"/>
+            <line num="25" count="1" type="stmt"/>
+            <line num="26" count="1" type="stmt"/>
+            <line num="27" count="1" type="stmt"/>
+            <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+            <line num="31" count="1" type="stmt"/>
+         </file>
+      </package>
+   </testproject>
+</coverage>

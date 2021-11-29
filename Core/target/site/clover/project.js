@@ -1,0 +1,2 @@
+processClover (  {"children":["function/"],"name":"Clover database Mon Nov 29 2021 14:22:41 CET","stats":{"AvgMethodComplexity":1.1666666,"Complexity":7,"ErroneousTests":0,"FailingTests":0,"FilteredElements":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":1,"TotalPercentageCovered":87.5,"TotalStatements":8,"UncoveredElements":2},"title":"Core 1.0-SNAPSHOT"}
+ ); 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1638192176030" clover="4.2.0">
+   <project name="Core 1.0-SNAPSHOT" timestamp="1638192169814">
+      <metrics coveredelements="14" complexity="7" loc="26" methods="6" classes="1" statements="8" packages="1" coveredconditionals="2" coveredmethods="5" elements="16" ncloc="25" files="1" conditionals="2" coveredstatements="7"/>
+      <package name="function">
+         <metrics coveredelements="14" complexity="7" loc="26" methods="6" classes="1" statements="8" coveredconditionals="2" coveredmethods="5" elements="16" ncloc="25" files="1" conditionals="2" coveredstatements="7"/>
+         <file path="/Users/yutarokashiwa/Documents/200_Development/210_Git/TestEffortEstimationTutorial/Core/src/main/java/function/Calculator.java" name="Calculator.java">
+            <metrics coveredelements="14" coveredconditionals="2" complexity="7" loc="26" coveredmethods="5" methods="6" elements="16" classes="1" ncloc="25" statements="8" conditionals="2" coveredstatements="7"/>
+            <class name="Calculator">
+               <metrics coveredelements="14" coveredconditionals="2" complexity="7" coveredmethods="5" methods="6" elements="16" statements="8" conditionals="2" coveredstatements="7"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Calculator()" num="5" count="4" type="method"/>
+            <line num="6" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="plus(int) : void" num="8" count="2" type="method"/>
+            <line num="9" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="minos(int) : void" num="11" count="0" type="method"/>
+            <line num="12" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="times(int) : void" num="14" count="2" type="method"/>
+            <line num="15" count="2" type="stmt"/>
+            <line complexity="2" visibility="public" signature="divided(int) : void" num="17" count="2" type="method"/>
+            <line num="18" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="18" type="cond"/>
+            <line num="19" count="1" type="stmt"/>
+            <line num="21" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getAnswer() : double" num="23" count="4" type="method"/>
+            <line num="24" count="4" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="Core 1.0-SNAPSHOT" timestamp="1638192169814">
+      <metrics coveredelements="10" complexity="2" loc="26" methods="2" classes="1" statements="8" packages="1" coveredconditionals="0" coveredmethods="2" elements="10" ncloc="18" files="1" conditionals="0" coveredstatements="8"/>
+      <package name="function">
+         <metrics coveredelements="10" complexity="2" loc="26" methods="2" classes="1" statements="8" coveredconditionals="0" coveredmethods="2" elements="10" ncloc="18" files="1" conditionals="0" coveredstatements="8"/>
+         <file path="/Users/yutarokashiwa/Documents/200_Development/210_Git/TestEffortEstimationTutorial/Core/src/test/java/function/CalculatorTest.java" name="CalculatorTest.java">
+            <metrics coveredelements="10" coveredconditionals="0" complexity="2" loc="26" coveredmethods="2" methods="2" elements="10" classes="1" ncloc="18" statements="8" conditionals="0" coveredstatements="8"/>
+            <class name="CalculatorTest">
+               <metrics coveredelements="10" complexity="2" methods="2" testruns="2" statements="8" coveredconditionals="0" coveredmethods="2" elements="10" testfailures="0" testduration="0.005" conditionals="0" coveredstatements="8" testpasses="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testDivided_N001() : void" num="10" testsuccess="true" count="1" testduration="0.005" type="method"/>
+            <line num="12" count="1" type="stmt"/>
+            <line num="13" count="1" type="stmt"/>
+            <line num="14" count="1" type="stmt"/>
+            <line num="15" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testDivided_N002() : void" num="18" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="21" count="1" type="stmt"/>
+            <line num="22" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+         </file>
+      </package>
+   </testproject>
+</coverage>
