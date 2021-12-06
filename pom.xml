@@ -35,33 +35,9 @@
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <forkMode>once</forkMode>
-                    <systemProperties>
-                        <property>
-                            <name>clover.server</name>
-                            <value>true</value>
-                        </property>
-                        <property>
-                            <name>clover.distributed.coverage</name>
-                            <value>ON</value>
-                        </property>
-                    </systemProperties>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.openclover</groupId>
-                <artifactId>clover-maven-plugin</artifactId>
-                <version>4.2.0</version>
-                <executions>
-                    <execution>
-                        <id>clover-test</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>aggregate</goal>
-                            <goal>clover</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+
         </plugins>
     </build>
 
