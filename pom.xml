@@ -30,7 +30,25 @@
 
 
     </dependencies>
+  <build>
 
-
+    <plugins>
+            <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+        <configuration>
+          <testFailureIgnore>true</testFailureIgnore>
+          <useSystemClassLoader>false</useSystemClassLoader>
+          <forkMode>once</forkMode>
+          <threadCount>1</threadCount>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.7</version>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
