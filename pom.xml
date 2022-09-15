@@ -10,6 +10,7 @@
     <modules>
         <module>Calc</module>
         <module>Core</module>
+        <module>pom-main.xml</module>
     </modules>
     <packaging>pom</packaging>
 
