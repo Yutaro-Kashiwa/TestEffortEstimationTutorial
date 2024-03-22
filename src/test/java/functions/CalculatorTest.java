@@ -21,6 +21,7 @@ class CalculatorTest {
         calc.plus_renamed(1.0);
         assertEquals(calc.getAnswer(), Double.valueOf(1));
         System.out.println();
+        System.out.println();
         common();
     }
    @Test
