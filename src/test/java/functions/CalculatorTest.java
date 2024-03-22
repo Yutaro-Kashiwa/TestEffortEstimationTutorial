@@ -1,15 +1,13 @@
 package functions;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
-import java.util.List;
-import functions.special.B;
 import functions.distributions.Calculator2;
 import functions.distributions.Calculator3;
-class CalculatorTest {
+import org.junit.Test;
+
+public class CalculatorTest {
     @Deprecated
     public static void common(){
         Integer i = 0;
