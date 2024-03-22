@@ -52,7 +52,7 @@ public class Calculator<T> {
             return;
         }
         if (abs(x)<=0.0){
-            System.err.println("the number was divided by 0");
+            System.err.println("the number was divided by 0!");
             answer = null;
             return;
         }
